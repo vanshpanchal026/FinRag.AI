@@ -4,8 +4,6 @@
 
 FinRAG-Eval is a 100% free, local-first Multi-Agent Retrieval-Augmented Generation (RAG) system engineered specifically for institutional equity research analysts and traders. It ingests complex financial PDFs (Quarterly Financial Results, Earnings Call Transcripts, and Investor Presentations), locks financial tables and speaker turns intact, provides exact inline source citations `[Source: File | Page: X | Chunk: Y]`, and audits every answer via a dual-layer evaluation engine (Deterministic Regex + LLM-as-a-Judge).
 
-> 📖 **Detailed Architecture & Phase Walkthrough:** See [Walkthrough.md](Walkthrough.md) for the complete phase-by-phase implementation narrative, verification matrix, and execution guide.
-
 ---
 
 ## 🏛️ System Architecture
@@ -78,14 +76,6 @@ mandatory inline citations        Tier 2: Faithfulness (0-10), Citations (0-10)
 
 ```
 FinRAG-Eval/
-│
-├── docs/                           # Architecture Specifications & Prompts
-│   ├── Prd.md                     # Product Requirements Document
-│   ├── DesignDocument.md          # Architectural Design & Schemas
-│   ├── Techstack.md               # Technology Stack Specifications
-│   ├── DetectionLogic.md          # Regex rules, prompts & eval logic
-│   ├── environment-setup.md       # Setup instructions
-│   └── implementation-plan.md     # Roadmap & completion tracking
 │
 ├── data/
 │   ├── raw_pdfs/                  # Raw uploaded PDF documents
