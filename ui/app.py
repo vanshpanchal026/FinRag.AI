@@ -11,9 +11,17 @@ Sources:
 - docs/DesignDocument.md Section 1 & 3
 """
 
+import os
 from pathlib import Path
 import re
+import sys
 import tempfile
+
+# Ensure project root is in sys.path for direct 'streamlit run ui/app.py' execution
+project_root = Path(__file__).resolve().parent.parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
 import streamlit as st
 
 from src.agents.analyst_agent import AnalystAgent

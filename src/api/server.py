@@ -11,7 +11,14 @@ Sources:
 
 from pathlib import Path
 import shutil
+import sys
 from typing import Any, Dict, List, Optional
+
+# Ensure project root is in sys.path when running uvicorn from any working directory
+project_root = Path(__file__).resolve().parent.parent.parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
