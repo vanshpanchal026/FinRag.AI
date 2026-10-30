@@ -4,6 +4,8 @@
 
 FinRAG-Eval is a 100% free, local-first Multi-Agent Retrieval-Augmented Generation (RAG) system engineered specifically for institutional equity research analysts and traders. It ingests complex financial PDFs (Quarterly Financial Results, Earnings Call Transcripts, and Investor Presentations), locks financial tables and speaker turns intact, provides exact inline source citations `[Source: File | Page: X | Chunk: Y]`, and audits every answer via a dual-layer evaluation engine (Deterministic Regex + LLM-as-a-Judge).
 
+> 📖 **Detailed Architecture & Phase Walkthrough:** See [Walkthrough.md](Walkthrough.md) for the complete phase-by-phase implementation narrative, verification matrix, and execution guide.
+
 ---
 
 ## 🏛️ System Architecture
@@ -143,7 +145,10 @@ uv pip install -r requirements.txt
 Or using standard `pip`:
 ```powershell
 python -m venv .venv
-.venv\Scripts\activate
+.\.venv\Scripts\activate
+
+# Install CPU-only PyTorch first to avoid heavy CUDA downloads and missing DLL issues
+pip install torch --index-url https://download.pytorch.org/whl/cpu
 pip install -r requirements.txt
 ```
 
