@@ -39,9 +39,13 @@ class Settings(BaseSettings):
     embedding_model: str = Field(default="BAAI/bge-small-en-v1.5")
     reranker_model: str = Field(default="ms-marco-MiniLM-L-12-v2")
 
-    # LLM Inference Models (Source: Techstack.md Section 4)
-    main_agent_model: str = Field(default="llama-3.3-70b-versatile")
-    eval_agent_model: str = Field(default="llama-3.1-8b-instant")
+    # LLM Inference Models (Source: Techstack.md Section 4 & Groq Platform)
+    main_agent_model: str = Field(
+        default="openai/gpt-oss-120b", alias="MAIN_AGENT_MODEL"
+    )
+    eval_agent_model: str = Field(
+        default="openai/gpt-oss-20b", alias="EVAL_AGENT_MODEL"
+    )
 
     # LLM Endpoints & Credentials
     groq_api_key: Optional[str] = Field(default=None, alias="GROQ_API_KEY")

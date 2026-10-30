@@ -45,7 +45,7 @@ Dense Search (Top 10 Semantic Chunks)     Sparse Search (Top 10 Keyword Chunks)
                ┌─────────────┴─────────────┐
                ▼                           ▼
 [Main Financial Analyst Agent]    [Two-Tier Evaluation Sub-Agent]
-(Groq / llama-3.3-70b-versatile)  (Regex Check + llama-3.1-8b-instant)
+(Groq / openai/gpt-oss-120b)      (Regex Check + openai/gpt-oss-20b)
 Generates cited response with     Tier 1: Verbatim numeric match
 mandatory inline citations        Tier 2: Faithfulness (0-10), Citations (0-10)
                │                           │
@@ -66,7 +66,7 @@ mandatory inline citations        Tier 2: Faithfulness (0-10), Citations (0-10)
 - **Vector Database:** `ChromaDB` (Persistent local client with cosine distance space)
 - **Sparse Keyword Search:** `rank-bm25` (`BM25Okapi` with financial tokenization and noise stopword filtering)
 - **Cross-Encoder Reranker:** `FlashRank` (`ms-marco-MiniLM-L-12-v2` ONNX runtime on CPU)
-- **LLM Synthesis & Auditor:** Unified client supporting `Groq Cloud` (`llama-3.3-70b-versatile`, `llama-3.1-8b-instant`) or any custom OpenAI-compatible endpoint
+- **LLM Synthesis & Auditor:** Unified client supporting `Groq Cloud` (`openai/gpt-oss-120b`, `openai/gpt-oss-20b`, or `qwen/qwen3.8-27b`) or any custom OpenAI-compatible endpoint
 - **API Framework:** `FastAPI` + `Uvicorn`
 - **Trader Workbench UI:** `Streamlit`
 

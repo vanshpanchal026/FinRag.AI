@@ -38,9 +38,9 @@ def format_golden_chunks(golden_chunks: List[Dict[str, Any]]) -> str:
     formatted_blocks: List[str] = []
     for c in golden_chunks:
         cid = c.get("chunk_id", "UNKNOWN_CHUNK")
-        meta = c.get("metadata", {})
-        source_file = meta.get("source_file", "unknown.pdf")
-        page_no = meta.get("page_no", 1)
+        meta = c.get("metadata") or {}
+        source_file = meta.get("source_file") or c.get("source_file") or "unknown.pdf"
+        page_no = meta.get("page_no") or c.get("page_no") or 1
         text = c.get("text", "").strip()
 
         block = (
