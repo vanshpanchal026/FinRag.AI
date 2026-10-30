@@ -1,0 +1,57 @@
+[
+  {
+    "query_id": "eval_001",
+    "company": "TATAELXSI",
+    "quarter": "Q2_FY27",
+    "doc_type": "Financial_Results",
+    "query": "What was the Revenue from Operations and EBITDA margin in Q2 FY27 compared to Q1 FY27?",
+    "ground_truth_answer": "Revenue from Operations in Q2 FY27 reached 1,250.5 Cr compared to 1,180.0 Cr in Q1 FY27 (+5.9% QoQ) [Source: TataElxsi_Q2.pdf | Page: 12 | Chunk: TATAELXSI_Q2_FY27_p12_c01]. EBITDA for Q2 FY27 stood at 355.5 Cr against 330.1 Cr in Q1 FY27 [Source: TataElxsi_Q2.pdf | Page: 12 | Chunk: TATAELXSI_Q2_FY27_p12_c01].",
+    "expected_figures": ["1,250.5", "1,180.0", "355.5", "330.1"],
+    "target_chunks": ["TATAELXSI_Q2_FY27_p12_c01"],
+    "key_metrics": ["Revenue", "EBITDA", "QoQ"]
+  },
+  {
+    "query_id": "eval_002",
+    "company": "TATAELXSI",
+    "quarter": "Q2_FY27",
+    "doc_type": "Concall_Transcript",
+    "query": "What is the revised capex guidance for FY28 and what is it allocated for?",
+    "ground_truth_answer": "Management revised the capex guidance for FY28 to 200 Cr, primarily allocated toward expanding the Bangalore development center and setting up GPU computing clusters [Source: TataElxsi_Q2_Concall.pdf | Page: 15 | Chunk: TATAELXSI_Q2_FY27_p15_c02].",
+    "expected_figures": ["200 Cr"],
+    "target_chunks": ["TATAELXSI_Q2_FY27_p15_c02"],
+    "key_metrics": ["Capex", "FY28", "GPU clusters"]
+  },
+  {
+    "query_id": "eval_003",
+    "company": "TATAELXSI",
+    "quarter": "Q2_FY27",
+    "doc_type": "Investor_Presentation",
+    "query": "How did the Transportation segment perform in Q2 FY27 in terms of revenue and QoQ growth?",
+    "ground_truth_answer": "The Transportation vertical reported revenue of 512 Cr representing +4.4% QoQ expansion, driven by software-defined vehicles (SDV) contracts [Source: TataElxsi_Q2.pdf | Page: 14 | Chunk: TATAELXSI_Q2_FY27_p14_c03].",
+    "expected_figures": ["512 Cr", "4.4%"],
+    "target_chunks": ["TATAELXSI_Q2_FY27_p14_c03"],
+    "key_metrics": ["Transportation", "SDV", "QoQ"]
+  },
+  {
+    "query_id": "eval_004",
+    "company": "TATAELXSI",
+    "quarter": "Q2_FY27",
+    "doc_type": "Investor_Presentation",
+    "query": "What was the Healthcare division revenue and growth rate in Q2 FY27?",
+    "ground_truth_answer": "The Healthcare division delivered revenue of 120 Cr with +4.3% QoQ growth across digital health platforms [Source: TataElxsi_Q2.pdf | Page: 16 | Chunk: TATAELXSI_Q2_FY27_p16_c04].",
+    "expected_figures": ["120 Cr", "4.3%"],
+    "target_chunks": ["TATAELXSI_Q2_FY27_p16_c04"],
+    "key_metrics": ["Healthcare", "Digital Health", "QoQ"]
+  },
+  {
+    "query_id": "eval_005",
+    "company": "TATAELXSI",
+    "quarter": "Q2_FY27",
+    "doc_type": "Financial_Results",
+    "query": "Did operating ROCE expand or contract between Q1 FY27 and Q2 FY27?",
+    "ground_truth_answer": "Operating ROCE expanded by 230 bps from 34.2% in Q1 FY27 [Source: TataElxsi_Q1.pdf | Page: 5 | Chunk: TATAELXSI_Q1_FY27_p05_c01] to 36.5% in Q2 FY27 [Source: TataElxsi_Q2.pdf | Page: 12 | Chunk: TATAELXSI_Q2_FY27_p12_c01].",
+    "expected_figures": ["34.2%", "36.5%"],
+    "target_chunks": ["TATAELXSI_Q1_FY27_p05_c01", "TATAELXSI_Q2_FY27_p12_c01"],
+    "key_metrics": ["ROCE", "Q1 FY27", "Q2 FY27"]
+  }
+]

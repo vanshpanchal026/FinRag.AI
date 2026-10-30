@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Vector DB & Ingested Data Artifacts
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+data/bm25_index/*
+!data/bm25_index/.gitkeep
+data/processed_md/*
+!data/processed_md/.gitkeep
+data/raw_pdfs/*
+!data/raw_pdfs/.gitkeep
+
+# OS & Editor Specific Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
