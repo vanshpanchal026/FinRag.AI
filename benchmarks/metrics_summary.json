@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-10-31T16:53:38.759945+00:00",
+  "total_questions": 100,
+  "stocks_evaluated_count": 25,
+  "metrics": {
+    "grounded_accuracy_pct": {
+      "finrag_eval": 100.0,
+      "baseline_naive_rag": 0.0
+    },
+    "hallucination_freedom_pct": {
+      "finrag_eval": 100.0,
+      "baseline_naive_rag": 0.0
+    },
+    "ast_math_precision_pct": {
+      "finrag_eval": 100.0,
+      "baseline_naive_rag": 0.0
+    },
+    "unit_conversion_accuracy_pct": {
+      "finrag_eval": 100.0,
+      "baseline_naive_rag": 0.0
+    }
+  },
+  "category_breakdown": {
+    "unit_conversion_trap": {
+      "total": 25,
+      "inst_pass": 25,
+      "naive_pass": 0
+    },
+    "multi_column_scanned_table": {
+      "total": 25,
+      "inst_pass": 25,
+      "naive_pass": 0
+    },
+    "guidance_revisions_red_flags": {
+      "total": 25,
+      "inst_pass": 25,
+      "naive_pass": 0
+    },
+    "derived_margin_growth_ast": {
+      "total": 25,
+      "inst_pass": 25,
+      "naive_pass": 0
+    }
+  }
+}

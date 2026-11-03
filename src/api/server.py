@@ -21,11 +21,13 @@ if str(project_root) not in sys.path:
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import Response
 from pydantic import BaseModel, Field
 
 from src.agents.analyst_agent import AnalystAgent
 from src.agents.eval_subagent import EvalSubAgent
 from src.config import settings
+from src.exports.sebi_audit_pdf import SEBIAuditPDFExporter
 from src.ingestion.indexer import get_chroma_collection, ingest_chunks
 from src.ingestion.pdf_parser import parse_pdf
 from src.ingestion.smart_chunker import chunk_document
@@ -293,3 +295,111 @@ def execute_preset_workflow(
             status_code=404,
             detail=f"Unknown preset '{preset_name}'. Options: 'red_flag_scanner', 'guidance_vs_actuals', 'growth_triggers_capex'.",
         )
+
+
+class ExportPDFRequest(BaseModel):
+    query: str
+    answer: str
+    eval_report: Dict[str, Any]
+    golden_chunks: List[Dict[str, Any]]
+    company: str = "TATAELXSI"
+    quarter: str = "Q2_FY27"
+    firm_name: Optional[str] = None
+    registration_no: Optional[str] = None
+    principal_officer: Optional[str] = None
+
+
+@app.post("/api/export/sebi-pdf")
+@app.post("/api/audit/export-pdf")
+def export_sebi_pdf_endpoint(req: ExportPDFRequest):
+    """Generate and download publication-grade SEBI Reg 24(7) Compliance Audit Dossier PDF."""
+    try:
+        exporter = SEBIAuditPDFExporter(
+            firm_name=req.firm_name,
+            registration_no=req.registration_no,
+            principal_officer=req.principal_officer,
+        )
+        pdf_bytes = exporter.generate_pdf(
+            query=req.query,
+            answer=req.answer,
+            eval_report=req.eval_report,
+            golden_chunks=req.golden_chunks,
+            company=req.company,
+            quarter=req.quarter,
+        )
+        return Response(
+            content=pdf_bytes,
+            media_type="application/pdf",
+            headers={
+                "Content-Disposition": f"attachment; filename=SEBI_Audit_Report_{req.company}_{req.quarter}.pdf"
+            },
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to generate SEBI audit PDF: {str(e)}",
+        )
+
+
+@app.get("/api/documents")
+def list_documents() -> Dict[str, Any]:
+    """List all indexed companies, quarters, and document counts from ChromaDB."""
+    settings.ensure_directories()
+    try:
+        collection = get_chroma_collection()
+        total_chunks = collection.count()
+
+        if total_chunks == 0:
+            return {"documents": [], "total_chunks": 0}
+
+        # Retrieve all metadata to aggregate by source_file
+        all_items = collection.get(
+            include=["metadatas"],
+            limit=total_chunks if total_chunks <= 50000 else 50000,
+        )
+        metadatas = all_items.get("metadatas") or []
+
+        # Aggregate by source_file
+        docs: Dict[str, Dict[str, Any]] = {}
+        for meta in metadatas:
+            if not meta:
+                continue
+            key = meta.get("source_file", "unknown")
+            if key not in docs:
+                docs[key] = {
+                    "source_file": key,
+                    "company": meta.get("company", ""),
+                    "quarter": meta.get("quarter", ""),
+                    "doc_type": meta.get("doc_type", ""),
+                    "chunks_count": 0,
+                    "tables_count": 0,
+                }
+            docs[key]["chunks_count"] += 1
+            if meta.get("contains_table"):
+                docs[key]["tables_count"] += 1
+
+        return {
+            "documents": list(docs.values()),
+            "total_chunks": total_chunks,
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error listing documents: {e}")
+
+
+@app.get("/api/benchmark/summary")
+def get_benchmark_summary() -> Dict[str, Any]:
+    """Retrieve the latest IndFinRAG-Bench benchmark metrics summary."""
+    metrics_file = settings.benchmarks_dir / "metrics_summary.json"
+    if metrics_file.exists():
+        try:
+            import json
+            with open(metrics_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error reading metrics: {e}")
+
+    return {
+        "status": "pending",
+        "message": "Benchmark has not been executed yet. Run benchmarks/ind_fin_bench.py to generate summary.",
+        "benchmarks_dir": str(settings.benchmarks_dir),
+    }

@@ -214,3 +214,44 @@ def test_trader_presets_mock_execution(sample_golden_chunks):
     )
     assert gtc_res["workflow"] == "growth_triggers_capex"
     assert gtc_res["eval_report"]["deterministic_checks"]["numeric_match_pass"] is True
+
+
+def test_tier1_ast_math_recomputation_pass(sample_golden_chunks):
+    """Verify that legitimate derived arithmetic (YoY growth %, bps margin compression) passes Tier-1."""
+    # Chunk has 1,250.5 (Q2) and 1,180.0 (Q1). Relative growth = +5.97% (approx 5.9%)
+    answer_with_derived_math = (
+        "Revenue reached 1,250.5 Cr in Q2 compared to 1,180.0 Cr in Q1 (+5.9% QoQ) "
+        "[Source: TataElxsi_Q2.pdf | Page: 12 | Chunk: TATAELXSI_Q2_FY27_p12_c01]."
+    )
+
+    result = run_deterministic_tier1_check(
+        generated_answer=answer_with_derived_math,
+        golden_chunks=sample_golden_chunks,
+    )
+
+    assert result["numeric_match_pass"] is True
+    assert len(result["ast_math_traces"]) >= 1
+    assert result["unverified_numbers"] == []
+
+
+def test_tier1_unit_conversion_pass():
+    """Verify that Lakhs to Crores conversion passes Tier-1 with unit trace."""
+    chunks = [
+        {
+            "chunk_id": "TEST_UNIT_p01_c01",
+            "text": "Total reported income was 50,000 Lakhs for the period.",
+            "metadata": {"source_file": "test.pdf", "page_no": 1},
+        }
+    ]
+    answer = "Total income was 500 Cr [Source: test.pdf | Page: 1 | Chunk: TEST_UNIT_p01_c01]."
+
+    result = run_deterministic_tier1_check(
+        generated_answer=answer,
+        golden_chunks=chunks,
+    )
+
+    assert result["numeric_match_pass"] is True
+    assert len(result["unit_converted_matches"]) == 1
+    assert result["unit_converted_matches"][0]["claimed_unit"] == "cr"
+    assert result["unit_converted_matches"][0]["source_unit"] == "lakhs"
+    assert result["unverified_numbers"] == []

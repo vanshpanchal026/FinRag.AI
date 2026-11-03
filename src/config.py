@@ -5,7 +5,7 @@ chunking parameters, and automatically ensures required directories exist.
 """
 
 from pathlib import Path
-from typing import Optional
+from typing import List, Optional
 from dotenv import load_dotenv
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -15,6 +15,15 @@ load_dotenv()
 
 # Root directory of the repository (parent of src/)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DEFAULT_DOC_TYPES = [
+    "DRHP_RHP",
+    "Financial_Results",
+    "Concall_Transcript",
+    "Investor_Presentation",
+    "Annual_Report",
+    "Corporate_Announcement",
+]
 
 
 class Settings(BaseSettings):
@@ -34,6 +43,15 @@ class Settings(BaseSettings):
     processed_md_dir: Path = Field(default=PROJECT_ROOT / "data" / "processed_md")
     chroma_db_dir: Path = Field(default=PROJECT_ROOT / "data" / "chroma_db")
     bm25_index_dir: Path = Field(default=PROJECT_ROOT / "data" / "bm25_index")
+    benchmarks_dir: Path = Field(default=PROJECT_ROOT / "benchmarks")
+
+    # Document Types Support (Multi-Document Corpus)
+    doc_types: List[str] = Field(default=DEFAULT_DOC_TYPES)
+
+    # SEBI Compliance Configuration (SEBI Reg 24(7) Dossier)
+    sebi_firm_name: Optional[str] = Field(default=None, alias="SEBI_FIRM_NAME")
+    sebi_registration_no: Optional[str] = Field(default=None, alias="SEBI_REGISTRATION_NO")
+    sebi_principal_officer: Optional[str] = Field(default=None, alias="SEBI_PRINCIPAL_OFFICER")
 
     # Local CPU Model Constants (Source: Techstack.md Section 3)
     embedding_model: str = Field(default="BAAI/bge-small-en-v1.5")
@@ -89,6 +107,7 @@ class Settings(BaseSettings):
             self.processed_md_dir,
             self.chroma_db_dir,
             self.bm25_index_dir,
+            self.benchmarks_dir,
         ]:
             path.mkdir(parents=True, exist_ok=True)
 

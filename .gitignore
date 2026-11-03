@@ -42,3 +42,7 @@ Thumbs.db
 # Local specifications & internal docs
 docs/
 Walkthrough.md
+
+# Agent and Tool Artifacts
+.archify/
+graphify-out/

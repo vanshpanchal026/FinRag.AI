@@ -25,6 +25,7 @@ from src.ingestion.indexer import (
     load_bm25_store,
     tokenize_for_bm25,
 )
+from src.retrieval.domain_taxonomy import expand_financial_query
 
 # Default retrieval parameters
 DEFAULT_TOP_K = 10
@@ -154,6 +155,7 @@ class HybridRetriever:
         query: str,
         top_k: Optional[int] = None,
         metadata_filter: Optional[Dict[str, Any]] = None,
+        additional_tokens: Optional[List[str]] = None,
     ) -> List[Dict[str, Any]]:
         """Query BM25Okapi index for exact keyword matching with metadata filtering.
 
@@ -161,6 +163,7 @@ class HybridRetriever:
             query: User's financial query.
             top_k: Number of sparse results to retrieve (default 10).
             metadata_filter: Optional dictionary (e.g. {'quarter': 'Q2_FY27'}).
+            additional_tokens: Optional list of expanded financial keywords.
 
         Returns:
             List of candidate chunk dictionaries with bm25_score and sparse_rank.
@@ -175,6 +178,10 @@ class HybridRetriever:
         chunks_map = store["chunks_map"]
 
         tokens = tokenize_for_bm25(query)
+        if additional_tokens:
+            extra = [t.lower() for t in additional_tokens if t and len(t) > 1]
+            tokens = list(dict.fromkeys(tokens + extra))
+
         if not tokens:
             return []
 
@@ -297,6 +304,7 @@ class HybridRetriever:
         query: str,
         top_k: Optional[int] = None,
         metadata_filter: Optional[Dict[str, Any]] = None,
+        expand_acronyms: bool = True,
     ) -> List[Dict[str, Any]]:
         """Execute full hybrid retrieval pipeline: Dense + Sparse -> RRF.
 
@@ -304,17 +312,31 @@ class HybridRetriever:
             query: Financial query string.
             top_k: Number of final fused candidates to return (default 10).
             metadata_filter: Optional dict to pre-filter chunks (e.g. {'quarter': 'Q2_FY27'}).
+            expand_acronyms: Whether to apply financial domain query expansion.
 
         Returns:
             List of Top K candidate chunks with RRF scores.
         """
         k = top_k or self.top_k
-        dense_results = self.dense_search(
-            query=query, top_k=k, metadata_filter=metadata_filter
-        )
-        sparse_results = self.sparse_search(
-            query=query, top_k=k, metadata_filter=metadata_filter
-        )
+
+        if expand_acronyms:
+            expanded_q, sparse_kw, _ = expand_financial_query(query)
+            dense_results = self.dense_search(
+                query=expanded_q, top_k=k, metadata_filter=metadata_filter
+            )
+            sparse_results = self.sparse_search(
+                query=query,
+                top_k=k,
+                metadata_filter=metadata_filter,
+                additional_tokens=sparse_kw,
+            )
+        else:
+            dense_results = self.dense_search(
+                query=query, top_k=k, metadata_filter=metadata_filter
+            )
+            sparse_results = self.sparse_search(
+                query=query, top_k=k, metadata_filter=metadata_filter
+            )
 
         return self.reciprocal_rank_fusion(
             dense_results=dense_results,

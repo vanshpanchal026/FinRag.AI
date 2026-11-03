@@ -45,6 +45,40 @@ SPEAKER_MARKER_CHECK_PATTERN = re.compile(
     re.MULTILINE,
 )
 
+# DRHP and Multi-Filing Section Detection Patterns
+DRHP_SECTION_PATTERNS = [
+    (re.compile(r"risk\s+factors?", re.IGNORECASE), "Risk_Factors"),
+    (re.compile(r"objects?\s+of\s+(?:the\s+)?(?:issue|offer)", re.IGNORECASE), "Objects_of_the_Issue"),
+    (re.compile(r"restated\s+(?:consolidated\s+)?financial", re.IGNORECASE), "Restated_Financials"),
+    (re.compile(r"(?:outstanding\s+)?litigation\s+(?:and\s+material|proceedings)", re.IGNORECASE), "Litigation"),
+    (re.compile(r"related\s+party\s+transactions?", re.IGNORECASE), "Related_Party_Transactions"),
+    (re.compile(r"management['\s]+discussion\s+and\s+analysis", re.IGNORECASE), "MD&A"),
+    (re.compile(r"statement\s+of\s+(?:standalone\s+|consolidated\s+)?(?:profit\s+and\s+loss|results)", re.IGNORECASE), "Financial_Results_Table"),
+]
+
+UNIT_HEADER_PATTERNS = [
+    (re.compile(r"\((?:Rs\.?|₹|in)\s*(?:in\s*)?lakhs?\)", re.IGNORECASE), "lakhs"),
+    (re.compile(r"\((?:Rs\.?|₹|in)\s*(?:in\s*)?crores?\)", re.IGNORECASE), "crores"),
+    (re.compile(r"\((?:Rs\.?|₹|in)\s*(?:in\s*)?millions?\)", re.IGNORECASE), "millions"),
+    (re.compile(r"\((?:Rs\.?|₹|in)\s*(?:in\s*)?thousands?\)", re.IGNORECASE), "thousands"),
+]
+
+
+def detect_doc_section(text: str) -> str:
+    """Detect specific DRHP or financial filing section name from text."""
+    for pattern, section_name in DRHP_SECTION_PATTERNS:
+        if pattern.search(text):
+            return section_name
+    return "General"
+
+
+def detect_chunk_unit(text: str) -> str:
+    """Detect reporting currency unit in text (lakhs, crores, millions)."""
+    for pattern, unit_name in UNIT_HEADER_PATTERNS:
+        if pattern.search(text):
+            return unit_name
+    return "unspecified"
+
 # Shared tiktoken encoder instance
 _ENCODER = tiktoken.get_encoding(settings.tiktoken_encoding)
 
@@ -446,6 +480,8 @@ def chunk_page(
                             "page_no": page_no,
                             "contains_table": True,
                             "source_file": file_name,
+                            "doc_section": detect_doc_section(sub_table),
+                            "detected_unit": detect_chunk_unit(sub_table),
                         },
                     }
                 )
@@ -480,6 +516,8 @@ def chunk_page(
                             "page_no": page_no,
                             "contains_table": False,
                             "source_file": file_name,
+                            "doc_section": detect_doc_section(c_text),
+                            "detected_unit": detect_chunk_unit(c_text),
                         },
                     }
                 )

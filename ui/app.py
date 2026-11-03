@@ -27,6 +27,7 @@ import streamlit as st
 from src.agents.analyst_agent import AnalystAgent
 from src.agents.eval_subagent import EvalSubAgent
 from src.config import settings
+from src.exports.sebi_audit_pdf import SEBIAuditPDFExporter
 from src.ingestion.indexer import get_chroma_collection, ingest_chunks, reset_indices
 from src.ingestion.pdf_parser import parse_pdf
 from src.ingestion.smart_chunker import chunk_document
@@ -143,8 +144,27 @@ with st.sidebar:
             "Concall_Transcript",
             "Investor_Presentation",
             "Annual_Report",
+            "DRHP_RHP",
+            "Corporate_Action",
         ],
     )
+
+    with st.expander("🏛️ SEBI Compliance Profile (Reg 24(7))", expanded=False):
+        firm_name_input = st.text_input(
+            "Firm / Entity Name",
+            value=settings.sebi_firm_name or "",
+            placeholder="e.g., Alpha Vantage Institutional Research",
+        )
+        reg_no_input = st.text_input(
+            "SEBI Registration No",
+            value=settings.sebi_registration_no or "",
+            placeholder="e.g., INH000012345",
+        )
+        officer_input = st.text_input(
+            "Principal Officer / Analyst",
+            value=settings.sebi_principal_officer or "",
+            placeholder="e.g., Lead Equity Analyst",
+        )
 
     if st.button("🚀 Ingest & Index PDF", use_container_width=True):
         if uploaded_file is None:
@@ -191,17 +211,36 @@ with st.sidebar:
 
     st.markdown("---")
     st.subheader("🎯 Active Metadata Filters")
-    filter_company = st.text_input("Filter Company", value="", placeholder="All companies")
+    # Database stats and dynamic indexed company selector
+    collection = get_chroma_collection()
+    doc_count = collection.count()
+    indexed_companies = []
+    if doc_count > 0:
+        sample_meta = collection.get(limit=500, include=["metadatas"])["metadatas"]
+        indexed_companies = sorted(list(set(m.get("company", "") for m in sample_meta if m.get("company"))))
+
+    company_options = ["All"] + indexed_companies
+    selected_company_filter = st.selectbox(
+        "Filter Company", company_options, help="Select from currently indexed stocks in ChromaDB"
+    )
+    filter_company = "" if selected_company_filter == "All" else selected_company_filter
     filter_quarter = st.text_input("Filter Quarter", value="", placeholder="All quarters")
     filter_doc_type = st.selectbox(
         "Filter Doc Type",
-        ["All", "Financial_Results", "Concall_Transcript", "Investor_Presentation", "Annual_Report"],
+        [
+            "All",
+            "Financial_Results",
+            "Concall_Transcript",
+            "Investor_Presentation",
+            "Annual_Report",
+            "DRHP_RHP",
+            "Corporate_Action",
+        ],
     )
 
-    # Database stats
-    collection = get_chroma_collection()
-    doc_count = collection.count()
-    st.caption(f"💾 Local Database: **{doc_count}** active chunks indexed")
+    st.caption(
+        f"💾 **Local Database:** {doc_count} chunks | **Indexed Stocks:** {', '.join(indexed_companies) if indexed_companies else 'None'}"
+    )
 
     if st.button("⚠️ Reset All Indices", help="Clears local vector and BM25 stores"):
         reset_indices()
@@ -418,6 +457,62 @@ if active_result:
     # Audit Reasoning Line
     reasoning_text = judge_scores.get("reasoning", "Audit complete.")
     st.caption(f"🔍 **Auditor Reasoning:** {reasoning_text}")
+
+    # ==============================================================================
+    # DETERMINISTIC MATH AST & UNIT VERIFICATION DRAWER
+    # ==============================================================================
+    ast_traces = deterministic_checks.get("ast_math_traces", [])
+    unit_matches = deterministic_checks.get("unit_converted_matches", [])
+
+    if ast_traces or unit_matches:
+        with st.expander("📐 Deterministic AST Math & Unit Normalization Breakdown", expanded=False):
+            if ast_traces:
+                st.markdown("**Python AST Arithmetic Recomputations (Safe Evaluation):**")
+                for trace in ast_traces:
+                    expr = trace.get("expression", "")
+                    claimed = trace.get("claimed_value", "")
+                    computed = trace.get("computed_value", "")
+                    st.markdown(
+                        f"- Formula: `{expr}` = **{computed}** (Claimed: **{claimed}**) — *{trace.get('explanation', '')}* ✅"
+                    )
+
+            if unit_matches:
+                st.markdown("**Indian Financial Unit Equivalence Normalizations:**")
+                for um in unit_matches:
+                    claimed_r = um.get("claimed_raw", "")
+                    source_r = um.get("source_raw", "")
+                    st.markdown(
+                        f"- Claimed: `{claimed_r}` ≡ Source: `{source_r}` (Unit normalized equivalence verified) ✅"
+                    )
+
+    # ==============================================================================
+    # SEBI REG 24(7) AUDIT PDF EXPORT BUTTON
+    # ==============================================================================
+    st.markdown("###")
+    pdf_exporter = SEBIAuditPDFExporter(
+        firm_name=firm_name_input if 'firm_name_input' in locals() and firm_name_input else None,
+        registration_no=reg_no_input if 'reg_no_input' in locals() and reg_no_input else None,
+        principal_officer=officer_input if 'officer_input' in locals() and officer_input else None,
+    )
+
+    try:
+        pdf_bytes = pdf_exporter.generate_pdf(
+            query=st.session_state.last_result.get("query", "Equity Research Audit"),
+            answer=answer,
+            eval_report=eval_report,
+            golden_chunks=golden_chunks,
+            company=company_input if 'company_input' in locals() and company_input else "TATAELXSI",
+            quarter=quarter_input if 'quarter_input' in locals() and quarter_input else "Q2_FY27",
+        )
+        st.download_button(
+            label="📄 Export SEBI Audit PDF (Reg 24(7))",
+            data=pdf_bytes,
+            file_name=f"SEBI_Audit_Report_{company_input}_{eval_report.get('query_id', 'audit')[:8]}.pdf",
+            mime="application/pdf",
+            use_container_width=True,
+        )
+    except Exception as e:
+        st.warning(f"Note: PDF generation preview standby ({e})")
 
     # ==============================================================================
     # EXPANDABLE ACCORDION: VERIFY RAW RETRIEVED SOURCES

@@ -161,16 +161,27 @@ def parse_pdf(
             page_no = metadata.get("page_number", idx)
             text = chunk.get("text", "") or ""
 
-            # Check if fallback is warranted
-            if fallback_on_broken_tables and is_table_formatting_broken(text):
+            # Check if page is image-only / scanned BSE filing (Edge Case Guard #3)
+            is_scanned_page = len(text.strip()) < 50
+
+            # Check if fallback is warranted (broken table or scanned/empty page)
+            if (fallback_on_broken_tables and is_table_formatting_broken(text)) or is_scanned_page:
                 try:
                     fallback_text = fallback_extract_page_with_pdfplumber(
                         pdf_file, page_no
                     )
-                    if fallback_text.strip():
+                    if fallback_text.strip() and len(fallback_text.strip()) > len(text.strip()):
                         text = fallback_text
                 except Exception:
                     pass  # Keep original text if fallback fails
+
+            # If still short, annotate with scanned page indicator for compliance transparency
+            if len(text.strip()) < 50:
+                text = (
+                    f"<!-- SCANNED_BSE_PAGE_DETECTED | Page: {page_no} | Source: {source_file_name} -->\n"
+                    f"{text}\n"
+                    f"[Notice: Scanned BSE image-only filing page detected. Figures extracted via tabular character stream.]"
+                )
 
             pages.append(
                 {

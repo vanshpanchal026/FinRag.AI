@@ -1,0 +1,25 @@
+[
+  {
+    "exchange": "NSE",
+    "symbol": "DIXON",
+    "company": "Dixon Technologies (India) Limited",
+    "ex_date": "2021-03-18",
+    "record_date": "2021-03-19",
+    "type": "split",
+    "face_value_from": 10.0,
+    "face_value_to": 2.0,
+    "ratio_num": 5,
+    "ratio_den": 1,
+    "raw_subject": "Stock Split From Rs. 10/- to Rs. 2/-"
+  },
+  {
+    "exchange": "NSE",
+    "symbol": "DIXON",
+    "company": "Dixon Technologies (India) Limited",
+    "ex_date": "2024-09-20",
+    "record_date": "2024-09-20",
+    "type": "dividend",
+    "cash_amount": 5.0,
+    "raw_subject": "Final Dividend - Rs 5 Per Share"
+  }
+]

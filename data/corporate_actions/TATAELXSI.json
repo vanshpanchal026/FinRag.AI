@@ -1,0 +1,22 @@
+[
+  {
+    "exchange": "NSE",
+    "symbol": "TATAELXSI",
+    "company": "Tata Elxsi Limited",
+    "ex_date": "2024-06-25",
+    "record_date": "2024-06-25",
+    "type": "dividend",
+    "cash_amount": 70.0,
+    "raw_subject": "Dividend - Rs 70 Per Share"
+  },
+  {
+    "exchange": "NSE",
+    "symbol": "TATAELXSI",
+    "company": "Tata Elxsi Limited",
+    "ex_date": "2023-06-22",
+    "record_date": "2023-06-22",
+    "type": "dividend",
+    "cash_amount": 60.6,
+    "raw_subject": "Dividend - Rs 60.60 Per Share"
+  }
+]

@@ -181,6 +181,8 @@ def test_chunk_metadata_schema_conformance(sample_pl_table_markdown: str):
         "page_no",
         "contains_table",
         "source_file",
+        "doc_section",
+        "detected_unit",
     }
 
     for idx, chunk in enumerate(chunks, start=1):

@@ -1,0 +1,3127 @@
+[
+  {
+    "query_id": "indfin_catA_001",
+    "company": "RELIANCE",
+    "company_name": "Reliance Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was RELIANCE's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "RELIANCE_Q2_FY27_p04_c01",
+      "source_file": "RELIANCE_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 4,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Reliance Industries Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 53,450.00 | 50,950.00 |\n| Net Profit for the period (after tax) | 8,552 | 7,642 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "53,450.00",
+      "normalized_crores": "534.50 Cr",
+      "prior_period_value": "50,950.00",
+      "target_chunks": [
+        "RELIANCE_Q2_FY27_p04_c01"
+      ],
+      "expected_answer": "Total Income from Operations for RELIANCE was 534.50 Crores (53,450.00 Lakhs) [Source: RELIANCE_BSE_Financial_Results_Q2FY27.pdf | Page: 4 | Chunk: RELIANCE_Q2_FY27_p04_c01].",
+      "expected_figures": [
+        "534.50",
+        "53,450.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 53,450.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_002",
+    "company": "TCS",
+    "company_name": "Tata Consultancy Services Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was TCS's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "TCS_Q2_FY27_p05_c01",
+      "source_file": "TCS_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 5,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Tata Consultancy Services Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 56,900.00 | 54,400.00 |\n| Net Profit for the period (after tax) | 9,104 | 8,160 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "56,900.00",
+      "normalized_crores": "569.00 Cr",
+      "prior_period_value": "54,400.00",
+      "target_chunks": [
+        "TCS_Q2_FY27_p05_c01"
+      ],
+      "expected_answer": "Total Income from Operations for TCS was 569.00 Crores (56,900.00 Lakhs) [Source: TCS_BSE_Financial_Results_Q2FY27.pdf | Page: 5 | Chunk: TCS_Q2_FY27_p05_c01].",
+      "expected_figures": [
+        "569.00",
+        "56,900.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 56,900.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_003",
+    "company": "HDFCBANK",
+    "company_name": "HDFC Bank Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was HDFCBANK's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "HDFCBANK_Q2_FY27_p06_c01",
+      "source_file": "HDFCBANK_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for HDFC Bank Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 60,350.00 | 57,850.00 |\n| Net Profit for the period (after tax) | 9,656 | 8,677 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "60,350.00",
+      "normalized_crores": "603.50 Cr",
+      "prior_period_value": "57,850.00",
+      "target_chunks": [
+        "HDFCBANK_Q2_FY27_p06_c01"
+      ],
+      "expected_answer": "Total Income from Operations for HDFCBANK was 603.50 Crores (60,350.00 Lakhs) [Source: HDFCBANK_BSE_Financial_Results_Q2FY27.pdf | Page: 6 | Chunk: HDFCBANK_Q2_FY27_p06_c01].",
+      "expected_figures": [
+        "603.50",
+        "60,350.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 60,350.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_004",
+    "company": "INFOSYS",
+    "company_name": "Infosys Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was INFOSYS's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "INFOSYS_Q2_FY27_p07_c01",
+      "source_file": "INFOSYS_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Infosys Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 63,800.00 | 61,300.00 |\n| Net Profit for the period (after tax) | 10,208 | 9,195 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "63,800.00",
+      "normalized_crores": "638.00 Cr",
+      "prior_period_value": "61,300.00",
+      "target_chunks": [
+        "INFOSYS_Q2_FY27_p07_c01"
+      ],
+      "expected_answer": "Total Income from Operations for INFOSYS was 638.00 Crores (63,800.00 Lakhs) [Source: INFOSYS_BSE_Financial_Results_Q2FY27.pdf | Page: 7 | Chunk: INFOSYS_Q2_FY27_p07_c01].",
+      "expected_figures": [
+        "638.00",
+        "63,800.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 63,800.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_005",
+    "company": "LT",
+    "company_name": "Larsen & Toubro Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was LT's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "LT_Q2_FY27_p08_c01",
+      "source_file": "LT_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 8,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Larsen & Toubro Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 67,250.00 | 64,750.00 |\n| Net Profit for the period (after tax) | 10,760 | 9,712 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "67,250.00",
+      "normalized_crores": "672.50 Cr",
+      "prior_period_value": "64,750.00",
+      "target_chunks": [
+        "LT_Q2_FY27_p08_c01"
+      ],
+      "expected_answer": "Total Income from Operations for LT was 672.50 Crores (67,250.00 Lakhs) [Source: LT_BSE_Financial_Results_Q2FY27.pdf | Page: 8 | Chunk: LT_Q2_FY27_p08_c01].",
+      "expected_figures": [
+        "672.50",
+        "67,250.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 67,250.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_006",
+    "company": "TITAN",
+    "company_name": "Titan Company Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was TITAN's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "TITAN_Q2_FY27_p09_c01",
+      "source_file": "TITAN_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 9,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Titan Company Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 70,700.00 | 68,200.00 |\n| Net Profit for the period (after tax) | 11,312 | 10,230 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "70,700.00",
+      "normalized_crores": "707.00 Cr",
+      "prior_period_value": "68,200.00",
+      "target_chunks": [
+        "TITAN_Q2_FY27_p09_c01"
+      ],
+      "expected_answer": "Total Income from Operations for TITAN was 707.00 Crores (70,700.00 Lakhs) [Source: TITAN_BSE_Financial_Results_Q2FY27.pdf | Page: 9 | Chunk: TITAN_Q2_FY27_p09_c01].",
+      "expected_figures": [
+        "707.00",
+        "70,700.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 70,700.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_007",
+    "company": "TRENT",
+    "company_name": "Trent Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was TRENT's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "TRENT_Q2_FY27_p10_c01",
+      "source_file": "TRENT_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 10,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Trent Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 74,150.00 | 71,650.00 |\n| Net Profit for the period (after tax) | 11,864 | 10,747 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "74,150.00",
+      "normalized_crores": "741.50 Cr",
+      "prior_period_value": "71,650.00",
+      "target_chunks": [
+        "TRENT_Q2_FY27_p10_c01"
+      ],
+      "expected_answer": "Total Income from Operations for TRENT was 741.50 Crores (74,150.00 Lakhs) [Source: TRENT_BSE_Financial_Results_Q2FY27.pdf | Page: 10 | Chunk: TRENT_Q2_FY27_p10_c01].",
+      "expected_figures": [
+        "741.50",
+        "74,150.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 74,150.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_008",
+    "company": "ZOMATO",
+    "company_name": "Zomato Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was ZOMATO's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "ZOMATO_Q2_FY27_p03_c01",
+      "source_file": "ZOMATO_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 3,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Zomato Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 77,600.00 | 75,100.00 |\n| Net Profit for the period (after tax) | 12,416 | 11,265 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "77,600.00",
+      "normalized_crores": "776.00 Cr",
+      "prior_period_value": "75,100.00",
+      "target_chunks": [
+        "ZOMATO_Q2_FY27_p03_c01"
+      ],
+      "expected_answer": "Total Income from Operations for ZOMATO was 776.00 Crores (77,600.00 Lakhs) [Source: ZOMATO_BSE_Financial_Results_Q2FY27.pdf | Page: 3 | Chunk: ZOMATO_Q2_FY27_p03_c01].",
+      "expected_figures": [
+        "776.00",
+        "77,600.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 77,600.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_009",
+    "company": "SUNPHARMA",
+    "company_name": "Sun Pharmaceutical Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was SUNPHARMA's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "SUNPHARMA_Q2_FY27_p04_c01",
+      "source_file": "SUNPHARMA_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 4,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Sun Pharmaceutical Industries Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 81,050.00 | 78,550.00 |\n| Net Profit for the period (after tax) | 12,968 | 11,782 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "81,050.00",
+      "normalized_crores": "810.50 Cr",
+      "prior_period_value": "78,550.00",
+      "target_chunks": [
+        "SUNPHARMA_Q2_FY27_p04_c01"
+      ],
+      "expected_answer": "Total Income from Operations for SUNPHARMA was 810.50 Crores (81,050.00 Lakhs) [Source: SUNPHARMA_BSE_Financial_Results_Q2FY27.pdf | Page: 4 | Chunk: SUNPHARMA_Q2_FY27_p04_c01].",
+      "expected_figures": [
+        "810.50",
+        "81,050.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 81,050.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_010",
+    "company": "ADANIPORTS",
+    "company_name": "Adani Ports and Special Economic Zone Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was ADANIPORTS's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "ADANIPORTS_Q2_FY27_p05_c01",
+      "source_file": "ADANIPORTS_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 5,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Adani Ports and Special Economic Zone Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 84,500.00 | 82,000.00 |\n| Net Profit for the period (after tax) | 13,520 | 12,300 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "84,500.00",
+      "normalized_crores": "845.00 Cr",
+      "prior_period_value": "82,000.00",
+      "target_chunks": [
+        "ADANIPORTS_Q2_FY27_p05_c01"
+      ],
+      "expected_answer": "Total Income from Operations for ADANIPORTS was 845.00 Crores (84,500.00 Lakhs) [Source: ADANIPORTS_BSE_Financial_Results_Q2FY27.pdf | Page: 5 | Chunk: ADANIPORTS_Q2_FY27_p05_c01].",
+      "expected_figures": [
+        "845.00",
+        "84,500.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 84,500.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_011",
+    "company": "DIXON",
+    "company_name": "Dixon Technologies (India) Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was DIXON's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "DIXON_Q2_FY27_p06_c01",
+      "source_file": "DIXON_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Dixon Technologies (India) Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 87,950.00 | 85,450.00 |\n| Net Profit for the period (after tax) | 14,072 | 12,817 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "87,950.00",
+      "normalized_crores": "879.50 Cr",
+      "prior_period_value": "85,450.00",
+      "target_chunks": [
+        "DIXON_Q2_FY27_p06_c01"
+      ],
+      "expected_answer": "Total Income from Operations for DIXON was 879.50 Crores (87,950.00 Lakhs) [Source: DIXON_BSE_Financial_Results_Q2FY27.pdf | Page: 6 | Chunk: DIXON_Q2_FY27_p06_c01].",
+      "expected_figures": [
+        "879.50",
+        "87,950.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 87,950.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_012",
+    "company": "TATAELXSI",
+    "company_name": "Tata Elxsi Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was TATAELXSI's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "TATAELXSI_Q2_FY27_p07_c01",
+      "source_file": "TATAELXSI_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Tata Elxsi Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 91,400.00 | 88,900.00 |\n| Net Profit for the period (after tax) | 14,624 | 13,335 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "91,400.00",
+      "normalized_crores": "914.00 Cr",
+      "prior_period_value": "88,900.00",
+      "target_chunks": [
+        "TATAELXSI_Q2_FY27_p07_c01"
+      ],
+      "expected_answer": "Total Income from Operations for TATAELXSI was 914.00 Crores (91,400.00 Lakhs) [Source: TATAELXSI_BSE_Financial_Results_Q2FY27.pdf | Page: 7 | Chunk: TATAELXSI_Q2_FY27_p07_c01].",
+      "expected_figures": [
+        "914.00",
+        "91,400.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 91,400.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_013",
+    "company": "COFORGE",
+    "company_name": "Coforge Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was COFORGE's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "COFORGE_Q2_FY27_p08_c01",
+      "source_file": "COFORGE_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 8,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Coforge Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 94,850.00 | 92,350.00 |\n| Net Profit for the period (after tax) | 15,176 | 13,852 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "94,850.00",
+      "normalized_crores": "948.50 Cr",
+      "prior_period_value": "92,350.00",
+      "target_chunks": [
+        "COFORGE_Q2_FY27_p08_c01"
+      ],
+      "expected_answer": "Total Income from Operations for COFORGE was 948.50 Crores (94,850.00 Lakhs) [Source: COFORGE_BSE_Financial_Results_Q2FY27.pdf | Page: 8 | Chunk: COFORGE_Q2_FY27_p08_c01].",
+      "expected_figures": [
+        "948.50",
+        "94,850.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 94,850.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_014",
+    "company": "CDSL",
+    "company_name": "Central Depository Services (India) Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was CDSL's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "CDSL_Q2_FY27_p09_c01",
+      "source_file": "CDSL_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 9,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Central Depository Services (India) Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 98,300.00 | 95,800.00 |\n| Net Profit for the period (after tax) | 15,728 | 14,370 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "98,300.00",
+      "normalized_crores": "983.00 Cr",
+      "prior_period_value": "95,800.00",
+      "target_chunks": [
+        "CDSL_Q2_FY27_p09_c01"
+      ],
+      "expected_answer": "Total Income from Operations for CDSL was 983.00 Crores (98,300.00 Lakhs) [Source: CDSL_BSE_Financial_Results_Q2FY27.pdf | Page: 9 | Chunk: CDSL_Q2_FY27_p09_c01].",
+      "expected_figures": [
+        "983.00",
+        "98,300.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 98,300.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_015",
+    "company": "BSELTD",
+    "company_name": "BSE Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was BSELTD's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "BSELTD_Q2_FY27_p10_c01",
+      "source_file": "BSELTD_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 10,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for BSE Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 101,750.00 | 99,250.00 |\n| Net Profit for the period (after tax) | 16,280 | 14,887 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "101,750.00",
+      "normalized_crores": "1,017.50 Cr",
+      "prior_period_value": "99,250.00",
+      "target_chunks": [
+        "BSELTD_Q2_FY27_p10_c01"
+      ],
+      "expected_answer": "Total Income from Operations for BSELTD was 1,017.50 Crores (101,750.00 Lakhs) [Source: BSELTD_BSE_Financial_Results_Q2FY27.pdf | Page: 10 | Chunk: BSELTD_Q2_FY27_p10_c01].",
+      "expected_figures": [
+        "1,017.50",
+        "101,750.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 101,750.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_016",
+    "company": "APOLLOHOSP",
+    "company_name": "Apollo Hospitals Enterprise Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was APOLLOHOSP's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "APOLLOHOSP_Q2_FY27_p03_c01",
+      "source_file": "APOLLOHOSP_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 3,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Apollo Hospitals Enterprise Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 105,200.00 | 102,700.00 |\n| Net Profit for the period (after tax) | 16,832 | 15,405 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "105,200.00",
+      "normalized_crores": "1,052.00 Cr",
+      "prior_period_value": "102,700.00",
+      "target_chunks": [
+        "APOLLOHOSP_Q2_FY27_p03_c01"
+      ],
+      "expected_answer": "Total Income from Operations for APOLLOHOSP was 1,052.00 Crores (105,200.00 Lakhs) [Source: APOLLOHOSP_BSE_Financial_Results_Q2FY27.pdf | Page: 3 | Chunk: APOLLOHOSP_Q2_FY27_p03_c01].",
+      "expected_figures": [
+        "1,052.00",
+        "105,200.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 105,200.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_017",
+    "company": "DIVISLAB",
+    "company_name": "Divi's Laboratories Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was DIVISLAB's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "DIVISLAB_Q2_FY27_p04_c01",
+      "source_file": "DIVISLAB_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 4,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Divi's Laboratories Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 108,650.00 | 106,150.00 |\n| Net Profit for the period (after tax) | 17,384 | 15,922 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "108,650.00",
+      "normalized_crores": "1,086.50 Cr",
+      "prior_period_value": "106,150.00",
+      "target_chunks": [
+        "DIVISLAB_Q2_FY27_p04_c01"
+      ],
+      "expected_answer": "Total Income from Operations for DIVISLAB was 1,086.50 Crores (108,650.00 Lakhs) [Source: DIVISLAB_BSE_Financial_Results_Q2FY27.pdf | Page: 4 | Chunk: DIVISLAB_Q2_FY27_p04_c01].",
+      "expected_figures": [
+        "1,086.50",
+        "108,650.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 108,650.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_018",
+    "company": "KPIGREEN",
+    "company_name": "KPI Green Energy Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was KPIGREEN's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "KPIGREEN_Q2_FY27_p05_c01",
+      "source_file": "KPIGREEN_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 5,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for KPI Green Energy Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 112,100.00 | 109,600.00 |\n| Net Profit for the period (after tax) | 17,936 | 16,440 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "112,100.00",
+      "normalized_crores": "1,121.00 Cr",
+      "prior_period_value": "109,600.00",
+      "target_chunks": [
+        "KPIGREEN_Q2_FY27_p05_c01"
+      ],
+      "expected_answer": "Total Income from Operations for KPIGREEN was 1,121.00 Crores (112,100.00 Lakhs) [Source: KPIGREEN_BSE_Financial_Results_Q2FY27.pdf | Page: 5 | Chunk: KPIGREEN_Q2_FY27_p05_c01].",
+      "expected_figures": [
+        "1,121.00",
+        "112,100.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 112,100.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_019",
+    "company": "SUZLON",
+    "company_name": "Suzlon Energy Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was SUZLON's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "SUZLON_Q2_FY27_p06_c01",
+      "source_file": "SUZLON_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Suzlon Energy Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 115,550.00 | 113,050.00 |\n| Net Profit for the period (after tax) | 18,488 | 16,957 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "115,550.00",
+      "normalized_crores": "1,155.50 Cr",
+      "prior_period_value": "113,050.00",
+      "target_chunks": [
+        "SUZLON_Q2_FY27_p06_c01"
+      ],
+      "expected_answer": "Total Income from Operations for SUZLON was 1,155.50 Crores (115,550.00 Lakhs) [Source: SUZLON_BSE_Financial_Results_Q2FY27.pdf | Page: 6 | Chunk: SUZLON_Q2_FY27_p06_c01].",
+      "expected_figures": [
+        "1,155.50",
+        "115,550.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 115,550.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_020",
+    "company": "ALLCARGO",
+    "company_name": "Allcargo Logistics Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was ALLCARGO's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "ALLCARGO_Q2_FY27_p07_c01",
+      "source_file": "ALLCARGO_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Allcargo Logistics Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 119,000.00 | 116,500.00 |\n| Net Profit for the period (after tax) | 19,040 | 17,475 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "119,000.00",
+      "normalized_crores": "1,190.00 Cr",
+      "prior_period_value": "116,500.00",
+      "target_chunks": [
+        "ALLCARGO_Q2_FY27_p07_c01"
+      ],
+      "expected_answer": "Total Income from Operations for ALLCARGO was 1,190.00 Crores (119,000.00 Lakhs) [Source: ALLCARGO_BSE_Financial_Results_Q2FY27.pdf | Page: 7 | Chunk: ALLCARGO_Q2_FY27_p07_c01].",
+      "expected_figures": [
+        "1,190.00",
+        "119,000.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 119,000.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_021",
+    "company": "STEELMAN",
+    "company_name": "Steelman Telecom Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was STEELMAN's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "STEELMAN_Q2_FY27_p08_c01",
+      "source_file": "STEELMAN_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 8,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Steelman Telecom Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 122,450.00 | 119,950.00 |\n| Net Profit for the period (after tax) | 19,592 | 17,992 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "122,450.00",
+      "normalized_crores": "1,224.50 Cr",
+      "prior_period_value": "119,950.00",
+      "target_chunks": [
+        "STEELMAN_Q2_FY27_p08_c01"
+      ],
+      "expected_answer": "Total Income from Operations for STEELMAN was 1,224.50 Crores (122,450.00 Lakhs) [Source: STEELMAN_BSE_Financial_Results_Q2FY27.pdf | Page: 8 | Chunk: STEELMAN_Q2_FY27_p08_c01].",
+      "expected_figures": [
+        "1,224.50",
+        "122,450.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 122,450.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_022",
+    "company": "KRISHNAFIL",
+    "company_name": "Krishna Filament Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was KRISHNAFIL's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "KRISHNAFIL_Q2_FY27_p09_c01",
+      "source_file": "KRISHNAFIL_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 9,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Krishna Filament Industries Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 125,900.00 | 123,400.00 |\n| Net Profit for the period (after tax) | 20,144 | 18,510 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "125,900.00",
+      "normalized_crores": "1,259.00 Cr",
+      "prior_period_value": "123,400.00",
+      "target_chunks": [
+        "KRISHNAFIL_Q2_FY27_p09_c01"
+      ],
+      "expected_answer": "Total Income from Operations for KRISHNAFIL was 1,259.00 Crores (125,900.00 Lakhs) [Source: KRISHNAFIL_BSE_Financial_Results_Q2FY27.pdf | Page: 9 | Chunk: KRISHNAFIL_Q2_FY27_p09_c01].",
+      "expected_figures": [
+        "1,259.00",
+        "125,900.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 125,900.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_023",
+    "company": "ITC",
+    "company_name": "ITC Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was ITC's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "ITC_Q2_FY27_p10_c01",
+      "source_file": "ITC_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 10,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for ITC Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 129,350.00 | 126,850.00 |\n| Net Profit for the period (after tax) | 20,696 | 19,027 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "129,350.00",
+      "normalized_crores": "1,293.50 Cr",
+      "prior_period_value": "126,850.00",
+      "target_chunks": [
+        "ITC_Q2_FY27_p10_c01"
+      ],
+      "expected_answer": "Total Income from Operations for ITC was 1,293.50 Crores (129,350.00 Lakhs) [Source: ITC_BSE_Financial_Results_Q2FY27.pdf | Page: 10 | Chunk: ITC_Q2_FY27_p10_c01].",
+      "expected_figures": [
+        "1,293.50",
+        "129,350.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 129,350.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_024",
+    "company": "HAL",
+    "company_name": "Hindustan Aeronautics Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was HAL's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "HAL_Q2_FY27_p03_c01",
+      "source_file": "HAL_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 3,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for Hindustan Aeronautics Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 132,800.00 | 130,300.00 |\n| Net Profit for the period (after tax) | 21,248 | 19,545 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "132,800.00",
+      "normalized_crores": "1,328.00 Cr",
+      "prior_period_value": "130,300.00",
+      "target_chunks": [
+        "HAL_Q2_FY27_p03_c01"
+      ],
+      "expected_answer": "Total Income from Operations for HAL was 1,328.00 Crores (132,800.00 Lakhs) [Source: HAL_BSE_Financial_Results_Q2FY27.pdf | Page: 3 | Chunk: HAL_Q2_FY27_p03_c01].",
+      "expected_figures": [
+        "1,328.00",
+        "132,800.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 132,800.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catA_025",
+    "company": "KPITTECH",
+    "company_name": "KPIT Technologies Ltd",
+    "quarter": "Q2_FY27",
+    "category": "unit_conversion_trap",
+    "doc_type": "Financial_Results",
+    "query": "What was KPITTECH's Total Income from Operations for the quarter ended 30-Sep-2026 expressed in Rs. Crores?",
+    "golden_context": {
+      "chunk_id": "KPITTECH_Q2_FY27_p04_c01",
+      "source_file": "KPITTECH_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 4,
+      "text": "(Rs. in Lakhs)\nStatement of Standalone Financial Results for KPIT Technologies Ltd for the period ended September 30, 2026\n| Particulars | Quarter Ended 30-Sep-2026 | Quarter Ended 30-Jun-2026 |\n|---|---|---|\n| Total Income from Operations | 136,250.00 | 133,750.00 |\n| Net Profit for the period (after tax) | 21,800 | 20,062 |\nThe above results were reviewed by the Audit Committee and approved by the Board of Directors."
+    },
+    "ground_truth": {
+      "source_filing_unit": "Lakhs",
+      "source_filing_value": "136,250.00",
+      "normalized_crores": "1,362.50 Cr",
+      "prior_period_value": "133,750.00",
+      "target_chunks": [
+        "KPITTECH_Q2_FY27_p04_c01"
+      ],
+      "expected_answer": "Total Income from Operations for KPITTECH was 1,362.50 Crores (136,250.00 Lakhs) [Source: KPITTECH_BSE_Financial_Results_Q2FY27.pdf | Page: 4 | Chunk: KPITTECH_Q2_FY27_p04_c01].",
+      "expected_figures": [
+        "1,362.50",
+        "136,250.00"
+      ],
+      "source_unit": "Lakhs",
+      "target_unit": "Crores",
+      "unit_multiplier": 100.0,
+      "naive_rag_trap": "Naive baseline outputs 136,250.00 Crores instead of converting Lakhs to Crores, inflating figures 100x."
+    }
+  },
+  {
+    "query_id": "indfin_catB_001",
+    "company": "RELIANCE",
+    "company_name": "Reliance Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was RELIANCE's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "RELIANCE_Q2_FY27_p03_c02",
+      "source_file": "RELIANCE_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 3,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Reliance Industries Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 1,285.5 | 1,225.5 | 1,735.4 | 1,645.4 |\n| Profit After Tax (PAT) | 231.4 | 221.4 | 329.7 | 314.7 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "RELIANCE_Q2_FY27_p03_c02"
+      ],
+      "expected_answer": "RELIANCE reported Consolidated Revenue from Operations of 1,735.4 Cr compared to Standalone Revenue of 1,285.5 Cr in Q2 FY27 [Source: RELIANCE_BSE_Financial_Results_Q2FY27.pdf | Page: 3 | Chunk: RELIANCE_Q2_FY27_p03_c02].",
+      "expected_figures": [
+        "1,735.4",
+        "1,285.5"
+      ],
+      "standalone_metric": 1285.5,
+      "consolidated_metric": 1735.4250000000002,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_002",
+    "company": "TCS",
+    "company_name": "Tata Consultancy Services Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was TCS's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "TCS_Q2_FY27_p04_c02",
+      "source_file": "TCS_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 4,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Tata Consultancy Services Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 1,371.0 | 1,311.0 | 1,850.9 | 1,760.9 |\n| Profit After Tax (PAT) | 246.8 | 236.8 | 351.7 | 336.7 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TCS_Q2_FY27_p04_c02"
+      ],
+      "expected_answer": "TCS reported Consolidated Revenue from Operations of 1,850.9 Cr compared to Standalone Revenue of 1,371.0 Cr in Q2 FY27 [Source: TCS_BSE_Financial_Results_Q2FY27.pdf | Page: 4 | Chunk: TCS_Q2_FY27_p04_c02].",
+      "expected_figures": [
+        "1,850.9",
+        "1,371.0"
+      ],
+      "standalone_metric": 1371.0,
+      "consolidated_metric": 1850.8500000000001,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_003",
+    "company": "HDFCBANK",
+    "company_name": "HDFC Bank Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was HDFCBANK's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "HDFCBANK_Q2_FY27_p05_c02",
+      "source_file": "HDFCBANK_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 5,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for HDFC Bank Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 1,456.5 | 1,396.5 | 1,966.3 | 1,876.3 |\n| Profit After Tax (PAT) | 262.2 | 252.2 | 373.6 | 358.6 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "HDFCBANK_Q2_FY27_p05_c02"
+      ],
+      "expected_answer": "HDFCBANK reported Consolidated Revenue from Operations of 1,966.3 Cr compared to Standalone Revenue of 1,456.5 Cr in Q2 FY27 [Source: HDFCBANK_BSE_Financial_Results_Q2FY27.pdf | Page: 5 | Chunk: HDFCBANK_Q2_FY27_p05_c02].",
+      "expected_figures": [
+        "1,966.3",
+        "1,456.5"
+      ],
+      "standalone_metric": 1456.5,
+      "consolidated_metric": 1966.275,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_004",
+    "company": "INFOSYS",
+    "company_name": "Infosys Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was INFOSYS's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "INFOSYS_Q2_FY27_p06_c02",
+      "source_file": "INFOSYS_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Infosys Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 1,542.0 | 1,482.0 | 2,081.7 | 1,991.7 |\n| Profit After Tax (PAT) | 277.6 | 267.6 | 395.5 | 380.5 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "INFOSYS_Q2_FY27_p06_c02"
+      ],
+      "expected_answer": "INFOSYS reported Consolidated Revenue from Operations of 2,081.7 Cr compared to Standalone Revenue of 1,542.0 Cr in Q2 FY27 [Source: INFOSYS_BSE_Financial_Results_Q2FY27.pdf | Page: 6 | Chunk: INFOSYS_Q2_FY27_p06_c02].",
+      "expected_figures": [
+        "2,081.7",
+        "1,542.0"
+      ],
+      "standalone_metric": 1542.0,
+      "consolidated_metric": 2081.7000000000003,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_005",
+    "company": "LT",
+    "company_name": "Larsen & Toubro Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was LT's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "LT_Q2_FY27_p07_c02",
+      "source_file": "LT_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Larsen & Toubro Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 1,627.5 | 1,567.5 | 2,197.1 | 2,107.1 |\n| Profit After Tax (PAT) | 292.9 | 282.9 | 417.5 | 402.5 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "LT_Q2_FY27_p07_c02"
+      ],
+      "expected_answer": "LT reported Consolidated Revenue from Operations of 2,197.1 Cr compared to Standalone Revenue of 1,627.5 Cr in Q2 FY27 [Source: LT_BSE_Financial_Results_Q2FY27.pdf | Page: 7 | Chunk: LT_Q2_FY27_p07_c02].",
+      "expected_figures": [
+        "2,197.1",
+        "1,627.5"
+      ],
+      "standalone_metric": 1627.5,
+      "consolidated_metric": 2197.125,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_006",
+    "company": "TITAN",
+    "company_name": "Titan Company Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was TITAN's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "TITAN_Q2_FY27_p02_c02",
+      "source_file": "TITAN_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 2,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Titan Company Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 1,713.0 | 1,653.0 | 2,312.6 | 2,222.6 |\n| Profit After Tax (PAT) | 308.3 | 298.3 | 439.4 | 424.4 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TITAN_Q2_FY27_p02_c02"
+      ],
+      "expected_answer": "TITAN reported Consolidated Revenue from Operations of 2,312.6 Cr compared to Standalone Revenue of 1,713.0 Cr in Q2 FY27 [Source: TITAN_BSE_Financial_Results_Q2FY27.pdf | Page: 2 | Chunk: TITAN_Q2_FY27_p02_c02].",
+      "expected_figures": [
+        "2,312.6",
+        "1,713.0"
+      ],
+      "standalone_metric": 1713.0,
+      "consolidated_metric": 2312.55,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_007",
+    "company": "TRENT",
+    "company_name": "Trent Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was TRENT's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "TRENT_Q2_FY27_p03_c02",
+      "source_file": "TRENT_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 3,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Trent Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 1,798.5 | 1,738.5 | 2,428.0 | 2,338.0 |\n| Profit After Tax (PAT) | 323.7 | 313.7 | 461.3 | 446.3 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TRENT_Q2_FY27_p03_c02"
+      ],
+      "expected_answer": "TRENT reported Consolidated Revenue from Operations of 2,428.0 Cr compared to Standalone Revenue of 1,798.5 Cr in Q2 FY27 [Source: TRENT_BSE_Financial_Results_Q2FY27.pdf | Page: 3 | Chunk: TRENT_Q2_FY27_p03_c02].",
+      "expected_figures": [
+        "2,428.0",
+        "1,798.5"
+      ],
+      "standalone_metric": 1798.5,
+      "consolidated_metric": 2427.9750000000004,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_008",
+    "company": "ZOMATO",
+    "company_name": "Zomato Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was ZOMATO's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "ZOMATO_Q2_FY27_p04_c02",
+      "source_file": "ZOMATO_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 4,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Zomato Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 1,884.0 | 1,824.0 | 2,543.4 | 2,453.4 |\n| Profit After Tax (PAT) | 339.1 | 329.1 | 483.2 | 468.2 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ZOMATO_Q2_FY27_p04_c02"
+      ],
+      "expected_answer": "ZOMATO reported Consolidated Revenue from Operations of 2,543.4 Cr compared to Standalone Revenue of 1,884.0 Cr in Q2 FY27 [Source: ZOMATO_BSE_Financial_Results_Q2FY27.pdf | Page: 4 | Chunk: ZOMATO_Q2_FY27_p04_c02].",
+      "expected_figures": [
+        "2,543.4",
+        "1,884.0"
+      ],
+      "standalone_metric": 1884.0,
+      "consolidated_metric": 2543.4,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_009",
+    "company": "SUNPHARMA",
+    "company_name": "Sun Pharmaceutical Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was SUNPHARMA's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "SUNPHARMA_Q2_FY27_p05_c02",
+      "source_file": "SUNPHARMA_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 5,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Sun Pharmaceutical Industries Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 1,969.5 | 1,909.5 | 2,658.8 | 2,568.8 |\n| Profit After Tax (PAT) | 354.5 | 344.5 | 505.2 | 490.2 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "SUNPHARMA_Q2_FY27_p05_c02"
+      ],
+      "expected_answer": "SUNPHARMA reported Consolidated Revenue from Operations of 2,658.8 Cr compared to Standalone Revenue of 1,969.5 Cr in Q2 FY27 [Source: SUNPHARMA_BSE_Financial_Results_Q2FY27.pdf | Page: 5 | Chunk: SUNPHARMA_Q2_FY27_p05_c02].",
+      "expected_figures": [
+        "2,658.8",
+        "1,969.5"
+      ],
+      "standalone_metric": 1969.5,
+      "consolidated_metric": 2658.8250000000003,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_010",
+    "company": "ADANIPORTS",
+    "company_name": "Adani Ports and Special Economic Zone Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was ADANIPORTS's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "ADANIPORTS_Q2_FY27_p06_c02",
+      "source_file": "ADANIPORTS_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Adani Ports and Special Economic Zone Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,055.0 | 1,995.0 | 2,774.2 | 2,684.2 |\n| Profit After Tax (PAT) | 369.9 | 359.9 | 527.1 | 512.1 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ADANIPORTS_Q2_FY27_p06_c02"
+      ],
+      "expected_answer": "ADANIPORTS reported Consolidated Revenue from Operations of 2,774.2 Cr compared to Standalone Revenue of 2,055.0 Cr in Q2 FY27 [Source: ADANIPORTS_BSE_Financial_Results_Q2FY27.pdf | Page: 6 | Chunk: ADANIPORTS_Q2_FY27_p06_c02].",
+      "expected_figures": [
+        "2,774.2",
+        "2,055.0"
+      ],
+      "standalone_metric": 2055.0,
+      "consolidated_metric": 2774.25,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_011",
+    "company": "DIXON",
+    "company_name": "Dixon Technologies (India) Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was DIXON's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "DIXON_Q2_FY27_p07_c02",
+      "source_file": "DIXON_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Dixon Technologies (India) Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,140.5 | 2,080.5 | 2,889.7 | 2,799.7 |\n| Profit After Tax (PAT) | 385.3 | 375.3 | 549.0 | 534.0 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "DIXON_Q2_FY27_p07_c02"
+      ],
+      "expected_answer": "DIXON reported Consolidated Revenue from Operations of 2,889.7 Cr compared to Standalone Revenue of 2,140.5 Cr in Q2 FY27 [Source: DIXON_BSE_Financial_Results_Q2FY27.pdf | Page: 7 | Chunk: DIXON_Q2_FY27_p07_c02].",
+      "expected_figures": [
+        "2,889.7",
+        "2,140.5"
+      ],
+      "standalone_metric": 2140.5,
+      "consolidated_metric": 2889.675,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_012",
+    "company": "TATAELXSI",
+    "company_name": "Tata Elxsi Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was TATAELXSI's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "TATAELXSI_Q2_FY27_p02_c02",
+      "source_file": "TATAELXSI_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 2,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Tata Elxsi Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,226.0 | 2,166.0 | 3,005.1 | 2,915.1 |\n| Profit After Tax (PAT) | 400.7 | 390.7 | 571.0 | 556.0 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TATAELXSI_Q2_FY27_p02_c02"
+      ],
+      "expected_answer": "TATAELXSI reported Consolidated Revenue from Operations of 3,005.1 Cr compared to Standalone Revenue of 2,226.0 Cr in Q2 FY27 [Source: TATAELXSI_BSE_Financial_Results_Q2FY27.pdf | Page: 2 | Chunk: TATAELXSI_Q2_FY27_p02_c02].",
+      "expected_figures": [
+        "3,005.1",
+        "2,226.0"
+      ],
+      "standalone_metric": 2226.0,
+      "consolidated_metric": 3005.1000000000004,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_013",
+    "company": "COFORGE",
+    "company_name": "Coforge Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was COFORGE's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "COFORGE_Q2_FY27_p03_c02",
+      "source_file": "COFORGE_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 3,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Coforge Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,311.5 | 2,251.5 | 3,120.5 | 3,030.5 |\n| Profit After Tax (PAT) | 416.1 | 406.1 | 592.9 | 577.9 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "COFORGE_Q2_FY27_p03_c02"
+      ],
+      "expected_answer": "COFORGE reported Consolidated Revenue from Operations of 3,120.5 Cr compared to Standalone Revenue of 2,311.5 Cr in Q2 FY27 [Source: COFORGE_BSE_Financial_Results_Q2FY27.pdf | Page: 3 | Chunk: COFORGE_Q2_FY27_p03_c02].",
+      "expected_figures": [
+        "3,120.5",
+        "2,311.5"
+      ],
+      "standalone_metric": 2311.5,
+      "consolidated_metric": 3120.525,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_014",
+    "company": "CDSL",
+    "company_name": "Central Depository Services (India) Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was CDSL's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "CDSL_Q2_FY27_p04_c02",
+      "source_file": "CDSL_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 4,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Central Depository Services (India) Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,397.0 | 2,337.0 | 3,236.0 | 3,146.0 |\n| Profit After Tax (PAT) | 431.5 | 421.5 | 614.8 | 599.8 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "CDSL_Q2_FY27_p04_c02"
+      ],
+      "expected_answer": "CDSL reported Consolidated Revenue from Operations of 3,236.0 Cr compared to Standalone Revenue of 2,397.0 Cr in Q2 FY27 [Source: CDSL_BSE_Financial_Results_Q2FY27.pdf | Page: 4 | Chunk: CDSL_Q2_FY27_p04_c02].",
+      "expected_figures": [
+        "3,236.0",
+        "2,397.0"
+      ],
+      "standalone_metric": 2397.0,
+      "consolidated_metric": 3235.9500000000003,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_015",
+    "company": "BSELTD",
+    "company_name": "BSE Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was BSELTD's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "BSELTD_Q2_FY27_p05_c02",
+      "source_file": "BSELTD_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 5,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for BSE Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,482.5 | 2,422.5 | 3,351.4 | 3,261.4 |\n| Profit After Tax (PAT) | 446.8 | 436.8 | 636.8 | 621.8 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "BSELTD_Q2_FY27_p05_c02"
+      ],
+      "expected_answer": "BSELTD reported Consolidated Revenue from Operations of 3,351.4 Cr compared to Standalone Revenue of 2,482.5 Cr in Q2 FY27 [Source: BSELTD_BSE_Financial_Results_Q2FY27.pdf | Page: 5 | Chunk: BSELTD_Q2_FY27_p05_c02].",
+      "expected_figures": [
+        "3,351.4",
+        "2,482.5"
+      ],
+      "standalone_metric": 2482.5,
+      "consolidated_metric": 3351.375,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_016",
+    "company": "APOLLOHOSP",
+    "company_name": "Apollo Hospitals Enterprise Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was APOLLOHOSP's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "APOLLOHOSP_Q2_FY27_p06_c02",
+      "source_file": "APOLLOHOSP_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Apollo Hospitals Enterprise Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,568.0 | 2,508.0 | 3,466.8 | 3,376.8 |\n| Profit After Tax (PAT) | 462.2 | 452.2 | 658.7 | 643.7 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "APOLLOHOSP_Q2_FY27_p06_c02"
+      ],
+      "expected_answer": "APOLLOHOSP reported Consolidated Revenue from Operations of 3,466.8 Cr compared to Standalone Revenue of 2,568.0 Cr in Q2 FY27 [Source: APOLLOHOSP_BSE_Financial_Results_Q2FY27.pdf | Page: 6 | Chunk: APOLLOHOSP_Q2_FY27_p06_c02].",
+      "expected_figures": [
+        "3,466.8",
+        "2,568.0"
+      ],
+      "standalone_metric": 2568.0,
+      "consolidated_metric": 3466.8,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_017",
+    "company": "DIVISLAB",
+    "company_name": "Divi's Laboratories Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was DIVISLAB's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "DIVISLAB_Q2_FY27_p07_c02",
+      "source_file": "DIVISLAB_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Divi's Laboratories Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,653.5 | 2,593.5 | 3,582.2 | 3,492.2 |\n| Profit After Tax (PAT) | 477.6 | 467.6 | 680.6 | 665.6 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "DIVISLAB_Q2_FY27_p07_c02"
+      ],
+      "expected_answer": "DIVISLAB reported Consolidated Revenue from Operations of 3,582.2 Cr compared to Standalone Revenue of 2,653.5 Cr in Q2 FY27 [Source: DIVISLAB_BSE_Financial_Results_Q2FY27.pdf | Page: 7 | Chunk: DIVISLAB_Q2_FY27_p07_c02].",
+      "expected_figures": [
+        "3,582.2",
+        "2,653.5"
+      ],
+      "standalone_metric": 2653.5,
+      "consolidated_metric": 3582.2250000000004,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_018",
+    "company": "KPIGREEN",
+    "company_name": "KPI Green Energy Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was KPIGREEN's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "KPIGREEN_Q2_FY27_p02_c02",
+      "source_file": "KPIGREEN_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 2,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for KPI Green Energy Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,739.0 | 2,679.0 | 3,697.7 | 3,607.7 |\n| Profit After Tax (PAT) | 493.0 | 483.0 | 702.6 | 687.6 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "KPIGREEN_Q2_FY27_p02_c02"
+      ],
+      "expected_answer": "KPIGREEN reported Consolidated Revenue from Operations of 3,697.7 Cr compared to Standalone Revenue of 2,739.0 Cr in Q2 FY27 [Source: KPIGREEN_BSE_Financial_Results_Q2FY27.pdf | Page: 2 | Chunk: KPIGREEN_Q2_FY27_p02_c02].",
+      "expected_figures": [
+        "3,697.7",
+        "2,739.0"
+      ],
+      "standalone_metric": 2739.0,
+      "consolidated_metric": 3697.65,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_019",
+    "company": "SUZLON",
+    "company_name": "Suzlon Energy Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was SUZLON's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "SUZLON_Q2_FY27_p03_c02",
+      "source_file": "SUZLON_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 3,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Suzlon Energy Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,824.5 | 2,764.5 | 3,813.1 | 3,723.1 |\n| Profit After Tax (PAT) | 508.4 | 498.4 | 724.5 | 709.5 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "SUZLON_Q2_FY27_p03_c02"
+      ],
+      "expected_answer": "SUZLON reported Consolidated Revenue from Operations of 3,813.1 Cr compared to Standalone Revenue of 2,824.5 Cr in Q2 FY27 [Source: SUZLON_BSE_Financial_Results_Q2FY27.pdf | Page: 3 | Chunk: SUZLON_Q2_FY27_p03_c02].",
+      "expected_figures": [
+        "3,813.1",
+        "2,824.5"
+      ],
+      "standalone_metric": 2824.5,
+      "consolidated_metric": 3813.0750000000003,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_020",
+    "company": "ALLCARGO",
+    "company_name": "Allcargo Logistics Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was ALLCARGO's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "ALLCARGO_Q2_FY27_p04_c02",
+      "source_file": "ALLCARGO_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 4,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Allcargo Logistics Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,910.0 | 2,850.0 | 3,928.5 | 3,838.5 |\n| Profit After Tax (PAT) | 523.8 | 513.8 | 746.4 | 731.4 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ALLCARGO_Q2_FY27_p04_c02"
+      ],
+      "expected_answer": "ALLCARGO reported Consolidated Revenue from Operations of 3,928.5 Cr compared to Standalone Revenue of 2,910.0 Cr in Q2 FY27 [Source: ALLCARGO_BSE_Financial_Results_Q2FY27.pdf | Page: 4 | Chunk: ALLCARGO_Q2_FY27_p04_c02].",
+      "expected_figures": [
+        "3,928.5",
+        "2,910.0"
+      ],
+      "standalone_metric": 2910.0,
+      "consolidated_metric": 3928.5000000000005,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_021",
+    "company": "STEELMAN",
+    "company_name": "Steelman Telecom Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was STEELMAN's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "STEELMAN_Q2_FY27_p05_c02",
+      "source_file": "STEELMAN_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 5,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Steelman Telecom Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 2,995.5 | 2,935.5 | 4,043.9 | 3,953.9 |\n| Profit After Tax (PAT) | 539.2 | 529.2 | 768.3 | 753.3 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "STEELMAN_Q2_FY27_p05_c02"
+      ],
+      "expected_answer": "STEELMAN reported Consolidated Revenue from Operations of 4,043.9 Cr compared to Standalone Revenue of 2,995.5 Cr in Q2 FY27 [Source: STEELMAN_BSE_Financial_Results_Q2FY27.pdf | Page: 5 | Chunk: STEELMAN_Q2_FY27_p05_c02].",
+      "expected_figures": [
+        "4,043.9",
+        "2,995.5"
+      ],
+      "standalone_metric": 2995.5,
+      "consolidated_metric": 4043.925,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_022",
+    "company": "KRISHNAFIL",
+    "company_name": "Krishna Filament Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was KRISHNAFIL's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "KRISHNAFIL_Q2_FY27_p06_c02",
+      "source_file": "KRISHNAFIL_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Krishna Filament Industries Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 3,081.0 | 3,021.0 | 4,159.4 | 4,069.4 |\n| Profit After Tax (PAT) | 554.6 | 544.6 | 790.3 | 775.3 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "KRISHNAFIL_Q2_FY27_p06_c02"
+      ],
+      "expected_answer": "KRISHNAFIL reported Consolidated Revenue from Operations of 4,159.4 Cr compared to Standalone Revenue of 3,081.0 Cr in Q2 FY27 [Source: KRISHNAFIL_BSE_Financial_Results_Q2FY27.pdf | Page: 6 | Chunk: KRISHNAFIL_Q2_FY27_p06_c02].",
+      "expected_figures": [
+        "4,159.4",
+        "3,081.0"
+      ],
+      "standalone_metric": 3081.0,
+      "consolidated_metric": 4159.35,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_023",
+    "company": "ITC",
+    "company_name": "ITC Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was ITC's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "ITC_Q2_FY27_p07_c02",
+      "source_file": "ITC_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for ITC Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 3,166.5 | 3,106.5 | 4,274.8 | 4,184.8 |\n| Profit After Tax (PAT) | 570.0 | 560.0 | 812.2 | 797.2 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ITC_Q2_FY27_p07_c02"
+      ],
+      "expected_answer": "ITC reported Consolidated Revenue from Operations of 4,274.8 Cr compared to Standalone Revenue of 3,166.5 Cr in Q2 FY27 [Source: ITC_BSE_Financial_Results_Q2FY27.pdf | Page: 7 | Chunk: ITC_Q2_FY27_p07_c02].",
+      "expected_figures": [
+        "4,274.8",
+        "3,166.5"
+      ],
+      "standalone_metric": 3166.5,
+      "consolidated_metric": 4274.775000000001,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_024",
+    "company": "HAL",
+    "company_name": "Hindustan Aeronautics Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was HAL's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "HAL_Q2_FY27_p02_c02",
+      "source_file": "HAL_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 2,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for Hindustan Aeronautics Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 3,252.0 | 3,192.0 | 4,390.2 | 4,300.2 |\n| Profit After Tax (PAT) | 585.4 | 575.4 | 834.1 | 819.1 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "HAL_Q2_FY27_p02_c02"
+      ],
+      "expected_answer": "HAL reported Consolidated Revenue from Operations of 4,390.2 Cr compared to Standalone Revenue of 3,252.0 Cr in Q2 FY27 [Source: HAL_BSE_Financial_Results_Q2FY27.pdf | Page: 2 | Chunk: HAL_Q2_FY27_p02_c02].",
+      "expected_figures": [
+        "4,390.2",
+        "3,252.0"
+      ],
+      "standalone_metric": 3252.0,
+      "consolidated_metric": 4390.200000000001,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catB_025",
+    "company": "KPITTECH",
+    "company_name": "KPIT Technologies Ltd",
+    "quarter": "Q2_FY27",
+    "category": "multi_column_scanned_table",
+    "doc_type": "Financial_Results",
+    "query": "What was KPITTECH's Consolidated Revenue from Operations versus Standalone Revenue from Operations in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "KPITTECH_Q2_FY27_p03_c02",
+      "source_file": "KPITTECH_BSE_Financial_Results_Q2FY27.pdf",
+      "page_no": 3,
+      "text": "(Rs. in Crores)\nSegment Disclosures & Unaudited Financial Results for KPIT Technologies Ltd\n| Particulars | Standalone Q2 FY27 | Standalone Q1 FY27 | Consolidated Q2 FY27 | Consolidated Q1 FY27 |\n|---|---|---|---|---|\n| Revenue from Operations | 3,337.5 | 3,277.5 | 4,505.6 | 4,415.6 |\n| Profit After Tax (PAT) | 600.8 | 590.8 | 856.1 | 841.1 |\nScanned table verification note: Consolidated includes international subsidiary revenues."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "KPITTECH_Q2_FY27_p03_c02"
+      ],
+      "expected_answer": "KPITTECH reported Consolidated Revenue from Operations of 4,505.6 Cr compared to Standalone Revenue of 3,337.5 Cr in Q2 FY27 [Source: KPITTECH_BSE_Financial_Results_Q2FY27.pdf | Page: 3 | Chunk: KPITTECH_Q2_FY27_p03_c02].",
+      "expected_figures": [
+        "4,505.6",
+        "3,337.5"
+      ],
+      "standalone_metric": 3337.5,
+      "consolidated_metric": 4505.625,
+      "naive_rag_trap": "Naive sliding-window chunkers confuse the adjacent Standalone and Consolidated columns in scanned BSE tables."
+    }
+  },
+  {
+    "query_id": "indfin_catC_001",
+    "company": "RELIANCE",
+    "company_name": "Reliance Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did RELIANCE management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "RELIANCE_Q2_FY27_p09_c04",
+      "source_file": "RELIANCE_Q2_Concall_Transcript.pdf",
+      "page_no": 9,
+      "text": "Earnings Conference Call Q&A Transcript - Reliance Industries Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 19% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 16%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 4 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "RELIANCE_Q2_FY27_p09_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 19% to 16% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 4 months to Q4 FY27 [Source: RELIANCE_Q2_Concall_Transcript.pdf | Page: 9 | Chunk: RELIANCE_Q2_FY27_p09_c04].",
+      "expected_figures": [
+        "19%",
+        "16%",
+        "4"
+      ],
+      "previous_guidance": "19%",
+      "revised_guidance": "16%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_002",
+    "company": "TCS",
+    "company_name": "Tata Consultancy Services Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did TCS management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "TCS_Q2_FY27_p10_c04",
+      "source_file": "TCS_Q2_Concall_Transcript.pdf",
+      "page_no": 10,
+      "text": "Earnings Conference Call Q&A Transcript - Tata Consultancy Services Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 20% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 17%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 5 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TCS_Q2_FY27_p10_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 20% to 17% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 5 months to Q4 FY27 [Source: TCS_Q2_Concall_Transcript.pdf | Page: 10 | Chunk: TCS_Q2_FY27_p10_c04].",
+      "expected_figures": [
+        "20%",
+        "17%",
+        "5"
+      ],
+      "previous_guidance": "20%",
+      "revised_guidance": "17%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_003",
+    "company": "HDFCBANK",
+    "company_name": "HDFC Bank Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did HDFCBANK management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "HDFCBANK_Q2_FY27_p11_c04",
+      "source_file": "HDFCBANK_Q2_Concall_Transcript.pdf",
+      "page_no": 11,
+      "text": "Earnings Conference Call Q&A Transcript - HDFC Bank Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 21% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 18%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 6 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "HDFCBANK_Q2_FY27_p11_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 21% to 18% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 6 months to Q4 FY27 [Source: HDFCBANK_Q2_Concall_Transcript.pdf | Page: 11 | Chunk: HDFCBANK_Q2_FY27_p11_c04].",
+      "expected_figures": [
+        "21%",
+        "18%",
+        "6"
+      ],
+      "previous_guidance": "21%",
+      "revised_guidance": "18%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_004",
+    "company": "INFOSYS",
+    "company_name": "Infosys Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did INFOSYS management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "INFOSYS_Q2_FY27_p12_c04",
+      "source_file": "INFOSYS_Q2_Concall_Transcript.pdf",
+      "page_no": 12,
+      "text": "Earnings Conference Call Q&A Transcript - Infosys Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 22% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 19%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 3 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "INFOSYS_Q2_FY27_p12_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 22% to 19% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 3 months to Q4 FY27 [Source: INFOSYS_Q2_Concall_Transcript.pdf | Page: 12 | Chunk: INFOSYS_Q2_FY27_p12_c04].",
+      "expected_figures": [
+        "22%",
+        "19%",
+        "3"
+      ],
+      "previous_guidance": "22%",
+      "revised_guidance": "19%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_005",
+    "company": "LT",
+    "company_name": "Larsen & Toubro Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did LT management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "LT_Q2_FY27_p13_c04",
+      "source_file": "LT_Q2_Concall_Transcript.pdf",
+      "page_no": 13,
+      "text": "Earnings Conference Call Q&A Transcript - Larsen & Toubro Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 23% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 20%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 4 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "LT_Q2_FY27_p13_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 23% to 20% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 4 months to Q4 FY27 [Source: LT_Q2_Concall_Transcript.pdf | Page: 13 | Chunk: LT_Q2_FY27_p13_c04].",
+      "expected_figures": [
+        "23%",
+        "20%",
+        "4"
+      ],
+      "previous_guidance": "23%",
+      "revised_guidance": "20%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_006",
+    "company": "TITAN",
+    "company_name": "Titan Company Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did TITAN management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "TITAN_Q2_FY27_p14_c04",
+      "source_file": "TITAN_Q2_Concall_Transcript.pdf",
+      "page_no": 14,
+      "text": "Earnings Conference Call Q&A Transcript - Titan Company Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 18% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 15%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 5 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TITAN_Q2_FY27_p14_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 18% to 15% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 5 months to Q4 FY27 [Source: TITAN_Q2_Concall_Transcript.pdf | Page: 14 | Chunk: TITAN_Q2_FY27_p14_c04].",
+      "expected_figures": [
+        "18%",
+        "15%",
+        "5"
+      ],
+      "previous_guidance": "18%",
+      "revised_guidance": "15%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_007",
+    "company": "TRENT",
+    "company_name": "Trent Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did TRENT management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "TRENT_Q2_FY27_p15_c04",
+      "source_file": "TRENT_Q2_Concall_Transcript.pdf",
+      "page_no": 15,
+      "text": "Earnings Conference Call Q&A Transcript - Trent Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 19% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 16%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 6 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TRENT_Q2_FY27_p15_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 19% to 16% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 6 months to Q4 FY27 [Source: TRENT_Q2_Concall_Transcript.pdf | Page: 15 | Chunk: TRENT_Q2_FY27_p15_c04].",
+      "expected_figures": [
+        "19%",
+        "16%",
+        "6"
+      ],
+      "previous_guidance": "19%",
+      "revised_guidance": "16%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_008",
+    "company": "ZOMATO",
+    "company_name": "Zomato Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did ZOMATO management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "ZOMATO_Q2_FY27_p16_c04",
+      "source_file": "ZOMATO_Q2_Concall_Transcript.pdf",
+      "page_no": 16,
+      "text": "Earnings Conference Call Q&A Transcript - Zomato Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 20% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 17%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 3 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ZOMATO_Q2_FY27_p16_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 20% to 17% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 3 months to Q4 FY27 [Source: ZOMATO_Q2_Concall_Transcript.pdf | Page: 16 | Chunk: ZOMATO_Q2_FY27_p16_c04].",
+      "expected_figures": [
+        "20%",
+        "17%",
+        "3"
+      ],
+      "previous_guidance": "20%",
+      "revised_guidance": "17%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_009",
+    "company": "SUNPHARMA",
+    "company_name": "Sun Pharmaceutical Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did SUNPHARMA management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "SUNPHARMA_Q2_FY27_p17_c04",
+      "source_file": "SUNPHARMA_Q2_Concall_Transcript.pdf",
+      "page_no": 17,
+      "text": "Earnings Conference Call Q&A Transcript - Sun Pharmaceutical Industries Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 21% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 18%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 4 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "SUNPHARMA_Q2_FY27_p17_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 21% to 18% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 4 months to Q4 FY27 [Source: SUNPHARMA_Q2_Concall_Transcript.pdf | Page: 17 | Chunk: SUNPHARMA_Q2_FY27_p17_c04].",
+      "expected_figures": [
+        "21%",
+        "18%",
+        "4"
+      ],
+      "previous_guidance": "21%",
+      "revised_guidance": "18%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_010",
+    "company": "ADANIPORTS",
+    "company_name": "Adani Ports and Special Economic Zone Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did ADANIPORTS management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "ADANIPORTS_Q2_FY27_p08_c04",
+      "source_file": "ADANIPORTS_Q2_Concall_Transcript.pdf",
+      "page_no": 8,
+      "text": "Earnings Conference Call Q&A Transcript - Adani Ports and Special Economic Zone Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 22% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 19%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 5 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ADANIPORTS_Q2_FY27_p08_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 22% to 19% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 5 months to Q4 FY27 [Source: ADANIPORTS_Q2_Concall_Transcript.pdf | Page: 8 | Chunk: ADANIPORTS_Q2_FY27_p08_c04].",
+      "expected_figures": [
+        "22%",
+        "19%",
+        "5"
+      ],
+      "previous_guidance": "22%",
+      "revised_guidance": "19%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_011",
+    "company": "DIXON",
+    "company_name": "Dixon Technologies (India) Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did DIXON management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "DIXON_Q2_FY27_p09_c04",
+      "source_file": "DIXON_Q2_Concall_Transcript.pdf",
+      "page_no": 9,
+      "text": "Earnings Conference Call Q&A Transcript - Dixon Technologies (India) Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 23% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 20%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 6 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "DIXON_Q2_FY27_p09_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 23% to 20% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 6 months to Q4 FY27 [Source: DIXON_Q2_Concall_Transcript.pdf | Page: 9 | Chunk: DIXON_Q2_FY27_p09_c04].",
+      "expected_figures": [
+        "23%",
+        "20%",
+        "6"
+      ],
+      "previous_guidance": "23%",
+      "revised_guidance": "20%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_012",
+    "company": "TATAELXSI",
+    "company_name": "Tata Elxsi Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did TATAELXSI management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "TATAELXSI_Q2_FY27_p10_c04",
+      "source_file": "TATAELXSI_Q2_Concall_Transcript.pdf",
+      "page_no": 10,
+      "text": "Earnings Conference Call Q&A Transcript - Tata Elxsi Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 18% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 15%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 3 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TATAELXSI_Q2_FY27_p10_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 18% to 15% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 3 months to Q4 FY27 [Source: TATAELXSI_Q2_Concall_Transcript.pdf | Page: 10 | Chunk: TATAELXSI_Q2_FY27_p10_c04].",
+      "expected_figures": [
+        "18%",
+        "15%",
+        "3"
+      ],
+      "previous_guidance": "18%",
+      "revised_guidance": "15%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_013",
+    "company": "COFORGE",
+    "company_name": "Coforge Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did COFORGE management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "COFORGE_Q2_FY27_p11_c04",
+      "source_file": "COFORGE_Q2_Concall_Transcript.pdf",
+      "page_no": 11,
+      "text": "Earnings Conference Call Q&A Transcript - Coforge Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 19% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 16%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 4 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "COFORGE_Q2_FY27_p11_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 19% to 16% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 4 months to Q4 FY27 [Source: COFORGE_Q2_Concall_Transcript.pdf | Page: 11 | Chunk: COFORGE_Q2_FY27_p11_c04].",
+      "expected_figures": [
+        "19%",
+        "16%",
+        "4"
+      ],
+      "previous_guidance": "19%",
+      "revised_guidance": "16%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_014",
+    "company": "CDSL",
+    "company_name": "Central Depository Services (India) Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did CDSL management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "CDSL_Q2_FY27_p12_c04",
+      "source_file": "CDSL_Q2_Concall_Transcript.pdf",
+      "page_no": 12,
+      "text": "Earnings Conference Call Q&A Transcript - Central Depository Services (India) Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 20% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 17%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 5 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "CDSL_Q2_FY27_p12_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 20% to 17% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 5 months to Q4 FY27 [Source: CDSL_Q2_Concall_Transcript.pdf | Page: 12 | Chunk: CDSL_Q2_FY27_p12_c04].",
+      "expected_figures": [
+        "20%",
+        "17%",
+        "5"
+      ],
+      "previous_guidance": "20%",
+      "revised_guidance": "17%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_015",
+    "company": "BSELTD",
+    "company_name": "BSE Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did BSELTD management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "BSELTD_Q2_FY27_p13_c04",
+      "source_file": "BSELTD_Q2_Concall_Transcript.pdf",
+      "page_no": 13,
+      "text": "Earnings Conference Call Q&A Transcript - BSE Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 21% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 18%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 6 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "BSELTD_Q2_FY27_p13_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 21% to 18% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 6 months to Q4 FY27 [Source: BSELTD_Q2_Concall_Transcript.pdf | Page: 13 | Chunk: BSELTD_Q2_FY27_p13_c04].",
+      "expected_figures": [
+        "21%",
+        "18%",
+        "6"
+      ],
+      "previous_guidance": "21%",
+      "revised_guidance": "18%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_016",
+    "company": "APOLLOHOSP",
+    "company_name": "Apollo Hospitals Enterprise Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did APOLLOHOSP management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "APOLLOHOSP_Q2_FY27_p14_c04",
+      "source_file": "APOLLOHOSP_Q2_Concall_Transcript.pdf",
+      "page_no": 14,
+      "text": "Earnings Conference Call Q&A Transcript - Apollo Hospitals Enterprise Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 22% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 19%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 3 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "APOLLOHOSP_Q2_FY27_p14_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 22% to 19% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 3 months to Q4 FY27 [Source: APOLLOHOSP_Q2_Concall_Transcript.pdf | Page: 14 | Chunk: APOLLOHOSP_Q2_FY27_p14_c04].",
+      "expected_figures": [
+        "22%",
+        "19%",
+        "3"
+      ],
+      "previous_guidance": "22%",
+      "revised_guidance": "19%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_017",
+    "company": "DIVISLAB",
+    "company_name": "Divi's Laboratories Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did DIVISLAB management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "DIVISLAB_Q2_FY27_p15_c04",
+      "source_file": "DIVISLAB_Q2_Concall_Transcript.pdf",
+      "page_no": 15,
+      "text": "Earnings Conference Call Q&A Transcript - Divi's Laboratories Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 23% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 20%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 4 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "DIVISLAB_Q2_FY27_p15_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 23% to 20% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 4 months to Q4 FY27 [Source: DIVISLAB_Q2_Concall_Transcript.pdf | Page: 15 | Chunk: DIVISLAB_Q2_FY27_p15_c04].",
+      "expected_figures": [
+        "23%",
+        "20%",
+        "4"
+      ],
+      "previous_guidance": "23%",
+      "revised_guidance": "20%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_018",
+    "company": "KPIGREEN",
+    "company_name": "KPI Green Energy Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did KPIGREEN management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "KPIGREEN_Q2_FY27_p16_c04",
+      "source_file": "KPIGREEN_Q2_Concall_Transcript.pdf",
+      "page_no": 16,
+      "text": "Earnings Conference Call Q&A Transcript - KPI Green Energy Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 18% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 15%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 5 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "KPIGREEN_Q2_FY27_p16_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 18% to 15% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 5 months to Q4 FY27 [Source: KPIGREEN_Q2_Concall_Transcript.pdf | Page: 16 | Chunk: KPIGREEN_Q2_FY27_p16_c04].",
+      "expected_figures": [
+        "18%",
+        "15%",
+        "5"
+      ],
+      "previous_guidance": "18%",
+      "revised_guidance": "15%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_019",
+    "company": "SUZLON",
+    "company_name": "Suzlon Energy Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did SUZLON management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "SUZLON_Q2_FY27_p17_c04",
+      "source_file": "SUZLON_Q2_Concall_Transcript.pdf",
+      "page_no": 17,
+      "text": "Earnings Conference Call Q&A Transcript - Suzlon Energy Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 19% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 16%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 6 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "SUZLON_Q2_FY27_p17_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 19% to 16% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 6 months to Q4 FY27 [Source: SUZLON_Q2_Concall_Transcript.pdf | Page: 17 | Chunk: SUZLON_Q2_FY27_p17_c04].",
+      "expected_figures": [
+        "19%",
+        "16%",
+        "6"
+      ],
+      "previous_guidance": "19%",
+      "revised_guidance": "16%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_020",
+    "company": "ALLCARGO",
+    "company_name": "Allcargo Logistics Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did ALLCARGO management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "ALLCARGO_Q2_FY27_p08_c04",
+      "source_file": "ALLCARGO_Q2_Concall_Transcript.pdf",
+      "page_no": 8,
+      "text": "Earnings Conference Call Q&A Transcript - Allcargo Logistics Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 20% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 17%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 3 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ALLCARGO_Q2_FY27_p08_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 20% to 17% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 3 months to Q4 FY27 [Source: ALLCARGO_Q2_Concall_Transcript.pdf | Page: 8 | Chunk: ALLCARGO_Q2_FY27_p08_c04].",
+      "expected_figures": [
+        "20%",
+        "17%",
+        "3"
+      ],
+      "previous_guidance": "20%",
+      "revised_guidance": "17%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_021",
+    "company": "STEELMAN",
+    "company_name": "Steelman Telecom Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did STEELMAN management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "STEELMAN_Q2_FY27_p09_c04",
+      "source_file": "STEELMAN_Q2_Concall_Transcript.pdf",
+      "page_no": 9,
+      "text": "Earnings Conference Call Q&A Transcript - Steelman Telecom Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 21% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 18%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 4 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "STEELMAN_Q2_FY27_p09_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 21% to 18% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 4 months to Q4 FY27 [Source: STEELMAN_Q2_Concall_Transcript.pdf | Page: 9 | Chunk: STEELMAN_Q2_FY27_p09_c04].",
+      "expected_figures": [
+        "21%",
+        "18%",
+        "4"
+      ],
+      "previous_guidance": "21%",
+      "revised_guidance": "18%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_022",
+    "company": "KRISHNAFIL",
+    "company_name": "Krishna Filament Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did KRISHNAFIL management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "KRISHNAFIL_Q2_FY27_p10_c04",
+      "source_file": "KRISHNAFIL_Q2_Concall_Transcript.pdf",
+      "page_no": 10,
+      "text": "Earnings Conference Call Q&A Transcript - Krishna Filament Industries Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 22% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 19%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 5 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "KRISHNAFIL_Q2_FY27_p10_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 22% to 19% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 5 months to Q4 FY27 [Source: KRISHNAFIL_Q2_Concall_Transcript.pdf | Page: 10 | Chunk: KRISHNAFIL_Q2_FY27_p10_c04].",
+      "expected_figures": [
+        "22%",
+        "19%",
+        "5"
+      ],
+      "previous_guidance": "22%",
+      "revised_guidance": "19%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_023",
+    "company": "ITC",
+    "company_name": "ITC Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did ITC management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "ITC_Q2_FY27_p11_c04",
+      "source_file": "ITC_Q2_Concall_Transcript.pdf",
+      "page_no": 11,
+      "text": "Earnings Conference Call Q&A Transcript - ITC Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 23% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 20%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 6 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ITC_Q2_FY27_p11_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 23% to 20% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 6 months to Q4 FY27 [Source: ITC_Q2_Concall_Transcript.pdf | Page: 11 | Chunk: ITC_Q2_FY27_p11_c04].",
+      "expected_figures": [
+        "23%",
+        "20%",
+        "6"
+      ],
+      "previous_guidance": "23%",
+      "revised_guidance": "20%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_024",
+    "company": "HAL",
+    "company_name": "Hindustan Aeronautics Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did HAL management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "HAL_Q2_FY27_p12_c04",
+      "source_file": "HAL_Q2_Concall_Transcript.pdf",
+      "page_no": 12,
+      "text": "Earnings Conference Call Q&A Transcript - Hindustan Aeronautics Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 18% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 15%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 3 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "HAL_Q2_FY27_p12_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 18% to 15% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 3 months to Q4 FY27 [Source: HAL_Q2_Concall_Transcript.pdf | Page: 12 | Chunk: HAL_Q2_FY27_p12_c04].",
+      "expected_figures": [
+        "18%",
+        "15%",
+        "3"
+      ],
+      "previous_guidance": "18%",
+      "revised_guidance": "15%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catC_025",
+    "company": "KPITTECH",
+    "company_name": "KPIT Technologies Ltd",
+    "quarter": "Q2_FY27",
+    "category": "guidance_revisions_red_flags",
+    "doc_type": "Concall_Transcript",
+    "query": "Did KPITTECH management revise full-year volume growth guidance or capex timelines during the Q2 FY27 concall?",
+    "golden_context": {
+      "chunk_id": "KPITTECH_Q2_FY27_p13_c04",
+      "source_file": "KPITTECH_Q2_Concall_Transcript.pdf",
+      "page_no": 13,
+      "text": "Earnings Conference Call Q&A Transcript - KPIT Technologies Ltd (Q2 FY27)\n\nAnalyst (Morgan Stanley): Can management provide color on whether the previously communicated 19% volume growth guidance for FY27 remains on track?\n\nManagement: Given geopolitical headwinds and logistics bottlenecks in the Red Sea corridor, we are prudently tempering our full-year volume growth guidance to 16%. Additionally, the commercial commissioning of our Phase-2 expansion is deferred by 4 months to Q4 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "KPITTECH_Q2_FY27_p13_c04"
+      ],
+      "expected_answer": "Management revised full-year volume growth guidance downwards from 19% to 16% citing Red Sea bottlenecks, and deferred Phase-2 commissioning by 4 months to Q4 FY27 [Source: KPITTECH_Q2_Concall_Transcript.pdf | Page: 13 | Chunk: KPITTECH_Q2_FY27_p13_c04].",
+      "expected_figures": [
+        "19%",
+        "16%",
+        "4"
+      ],
+      "previous_guidance": "19%",
+      "revised_guidance": "16%",
+      "naive_rag_trap": "Baseline models split the analyst question from the management answer, losing the negative revision context."
+    }
+  },
+  {
+    "query_id": "indfin_catD_001",
+    "company": "RELIANCE",
+    "company_name": "Reliance Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was RELIANCE's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "RELIANCE_Q2_FY27_p06_c03",
+      "source_file": "RELIANCE_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Reliance Industries Ltd\nRevenue from Operations reached 1,139.25 Cr in Q2 FY27 against 1,050.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 20.0% in Q2 FY27 compared to 17.7% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "RELIANCE_Q2_FY27_p06_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,050.00 Cr to 1,139.25 Cr), while EBITDA margin expanded by 230 bps from 17.7% to 20.0% [Source: RELIANCE_Investor_Presentation_Q2FY27.pdf | Page: 6 | Chunk: RELIANCE_Q2_FY27_p06_c03].",
+      "expected_figures": [
+        "1,139.25",
+        "1,050.00",
+        "8.50%",
+        "230",
+        "20.0%",
+        "17.7%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1139.25 - 1050.00) / 1050.00) * 100",
+      "ast_formula_bps": "(20.0 - 17.7) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_002",
+    "company": "TCS",
+    "company_name": "Tata Consultancy Services Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was TCS's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "TCS_Q2_FY27_p07_c03",
+      "source_file": "TCS_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Tata Consultancy Services Ltd\nRevenue from Operations reached 1,193.50 Cr in Q2 FY27 against 1,100.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 21.2% in Q2 FY27 compared to 18.9% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TCS_Q2_FY27_p07_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,100.00 Cr to 1,193.50 Cr), while EBITDA margin expanded by 230 bps from 18.9% to 21.2% [Source: TCS_Investor_Presentation_Q2FY27.pdf | Page: 7 | Chunk: TCS_Q2_FY27_p07_c03].",
+      "expected_figures": [
+        "1,193.50",
+        "1,100.00",
+        "8.50%",
+        "230",
+        "21.2%",
+        "18.9%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1193.50 - 1100.00) / 1100.00) * 100",
+      "ast_formula_bps": "(21.2 - 18.9) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_003",
+    "company": "HDFCBANK",
+    "company_name": "HDFC Bank Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was HDFCBANK's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "HDFCBANK_Q2_FY27_p08_c03",
+      "source_file": "HDFCBANK_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 8,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for HDFC Bank Ltd\nRevenue from Operations reached 1,247.75 Cr in Q2 FY27 against 1,150.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 22.4% in Q2 FY27 compared to 20.1% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "HDFCBANK_Q2_FY27_p08_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,150.00 Cr to 1,247.75 Cr), while EBITDA margin expanded by 230 bps from 20.1% to 22.4% [Source: HDFCBANK_Investor_Presentation_Q2FY27.pdf | Page: 8 | Chunk: HDFCBANK_Q2_FY27_p08_c03].",
+      "expected_figures": [
+        "1,247.75",
+        "1,150.00",
+        "8.50%",
+        "230",
+        "22.4%",
+        "20.1%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1247.75 - 1150.00) / 1150.00) * 100",
+      "ast_formula_bps": "(22.4 - 20.1) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_004",
+    "company": "INFOSYS",
+    "company_name": "Infosys Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was INFOSYS's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "INFOSYS_Q2_FY27_p09_c03",
+      "source_file": "INFOSYS_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 9,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Infosys Ltd\nRevenue from Operations reached 1,302.00 Cr in Q2 FY27 against 1,200.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 23.6% in Q2 FY27 compared to 21.3% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "INFOSYS_Q2_FY27_p09_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,200.00 Cr to 1,302.00 Cr), while EBITDA margin expanded by 230 bps from 21.3% to 23.6% [Source: INFOSYS_Investor_Presentation_Q2FY27.pdf | Page: 9 | Chunk: INFOSYS_Q2_FY27_p09_c03].",
+      "expected_figures": [
+        "1,302.00",
+        "1,200.00",
+        "8.50%",
+        "230",
+        "23.6%",
+        "21.3%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1302.00 - 1200.00) / 1200.00) * 100",
+      "ast_formula_bps": "(23.6 - 21.3) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_005",
+    "company": "LT",
+    "company_name": "Larsen & Toubro Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was LT's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "LT_Q2_FY27_p10_c03",
+      "source_file": "LT_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 10,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Larsen & Toubro Ltd\nRevenue from Operations reached 1,356.25 Cr in Q2 FY27 against 1,250.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 24.8% in Q2 FY27 compared to 22.5% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "LT_Q2_FY27_p10_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,250.00 Cr to 1,356.25 Cr), while EBITDA margin expanded by 230 bps from 22.5% to 24.8% [Source: LT_Investor_Presentation_Q2FY27.pdf | Page: 10 | Chunk: LT_Q2_FY27_p10_c03].",
+      "expected_figures": [
+        "1,356.25",
+        "1,250.00",
+        "8.50%",
+        "230",
+        "24.8%",
+        "22.5%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1356.25 - 1250.00) / 1250.00) * 100",
+      "ast_formula_bps": "(24.8 - 22.5) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_006",
+    "company": "TITAN",
+    "company_name": "Titan Company Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was TITAN's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "TITAN_Q2_FY27_p11_c03",
+      "source_file": "TITAN_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 11,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Titan Company Ltd\nRevenue from Operations reached 1,410.50 Cr in Q2 FY27 against 1,300.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 26.0% in Q2 FY27 compared to 23.7% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TITAN_Q2_FY27_p11_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,300.00 Cr to 1,410.50 Cr), while EBITDA margin expanded by 230 bps from 23.7% to 26.0% [Source: TITAN_Investor_Presentation_Q2FY27.pdf | Page: 11 | Chunk: TITAN_Q2_FY27_p11_c03].",
+      "expected_figures": [
+        "1,410.50",
+        "1,300.00",
+        "8.50%",
+        "230",
+        "26.0%",
+        "23.7%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1410.50 - 1300.00) / 1300.00) * 100",
+      "ast_formula_bps": "(26.0 - 23.7) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_007",
+    "company": "TRENT",
+    "company_name": "Trent Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was TRENT's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "TRENT_Q2_FY27_p12_c03",
+      "source_file": "TRENT_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 12,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Trent Ltd\nRevenue from Operations reached 1,464.75 Cr in Q2 FY27 against 1,350.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 18.8% in Q2 FY27 compared to 16.5% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TRENT_Q2_FY27_p12_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,350.00 Cr to 1,464.75 Cr), while EBITDA margin expanded by 230 bps from 16.5% to 18.8% [Source: TRENT_Investor_Presentation_Q2FY27.pdf | Page: 12 | Chunk: TRENT_Q2_FY27_p12_c03].",
+      "expected_figures": [
+        "1,464.75",
+        "1,350.00",
+        "8.50%",
+        "230",
+        "18.8%",
+        "16.5%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1464.75 - 1350.00) / 1350.00) * 100",
+      "ast_formula_bps": "(18.8 - 16.5) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_008",
+    "company": "ZOMATO",
+    "company_name": "Zomato Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was ZOMATO's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "ZOMATO_Q2_FY27_p13_c03",
+      "source_file": "ZOMATO_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 13,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Zomato Ltd\nRevenue from Operations reached 1,519.00 Cr in Q2 FY27 against 1,400.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 20.0% in Q2 FY27 compared to 17.7% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ZOMATO_Q2_FY27_p13_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,400.00 Cr to 1,519.00 Cr), while EBITDA margin expanded by 230 bps from 17.7% to 20.0% [Source: ZOMATO_Investor_Presentation_Q2FY27.pdf | Page: 13 | Chunk: ZOMATO_Q2_FY27_p13_c03].",
+      "expected_figures": [
+        "1,519.00",
+        "1,400.00",
+        "8.50%",
+        "230",
+        "20.0%",
+        "17.7%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1519.00 - 1400.00) / 1400.00) * 100",
+      "ast_formula_bps": "(20.0 - 17.7) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_009",
+    "company": "SUNPHARMA",
+    "company_name": "Sun Pharmaceutical Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was SUNPHARMA's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "SUNPHARMA_Q2_FY27_p05_c03",
+      "source_file": "SUNPHARMA_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 5,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Sun Pharmaceutical Industries Ltd\nRevenue from Operations reached 1,573.25 Cr in Q2 FY27 against 1,450.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 21.2% in Q2 FY27 compared to 18.9% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "SUNPHARMA_Q2_FY27_p05_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,450.00 Cr to 1,573.25 Cr), while EBITDA margin expanded by 230 bps from 18.9% to 21.2% [Source: SUNPHARMA_Investor_Presentation_Q2FY27.pdf | Page: 5 | Chunk: SUNPHARMA_Q2_FY27_p05_c03].",
+      "expected_figures": [
+        "1,573.25",
+        "1,450.00",
+        "8.50%",
+        "230",
+        "21.2%",
+        "18.9%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1573.25 - 1450.00) / 1450.00) * 100",
+      "ast_formula_bps": "(21.2 - 18.9) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_010",
+    "company": "ADANIPORTS",
+    "company_name": "Adani Ports and Special Economic Zone Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was ADANIPORTS's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "ADANIPORTS_Q2_FY27_p06_c03",
+      "source_file": "ADANIPORTS_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Adani Ports and Special Economic Zone Ltd\nRevenue from Operations reached 1,627.50 Cr in Q2 FY27 against 1,500.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 22.4% in Q2 FY27 compared to 20.1% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ADANIPORTS_Q2_FY27_p06_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,500.00 Cr to 1,627.50 Cr), while EBITDA margin expanded by 230 bps from 20.1% to 22.4% [Source: ADANIPORTS_Investor_Presentation_Q2FY27.pdf | Page: 6 | Chunk: ADANIPORTS_Q2_FY27_p06_c03].",
+      "expected_figures": [
+        "1,627.50",
+        "1,500.00",
+        "8.50%",
+        "230",
+        "22.4%",
+        "20.1%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1627.50 - 1500.00) / 1500.00) * 100",
+      "ast_formula_bps": "(22.4 - 20.1) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_011",
+    "company": "DIXON",
+    "company_name": "Dixon Technologies (India) Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was DIXON's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "DIXON_Q2_FY27_p07_c03",
+      "source_file": "DIXON_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Dixon Technologies (India) Ltd\nRevenue from Operations reached 1,681.75 Cr in Q2 FY27 against 1,550.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 23.6% in Q2 FY27 compared to 21.3% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "DIXON_Q2_FY27_p07_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,550.00 Cr to 1,681.75 Cr), while EBITDA margin expanded by 230 bps from 21.3% to 23.6% [Source: DIXON_Investor_Presentation_Q2FY27.pdf | Page: 7 | Chunk: DIXON_Q2_FY27_p07_c03].",
+      "expected_figures": [
+        "1,681.75",
+        "1,550.00",
+        "8.50%",
+        "230",
+        "23.6%",
+        "21.3%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1681.75 - 1550.00) / 1550.00) * 100",
+      "ast_formula_bps": "(23.6 - 21.3) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_012",
+    "company": "TATAELXSI",
+    "company_name": "Tata Elxsi Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was TATAELXSI's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "TATAELXSI_Q2_FY27_p08_c03",
+      "source_file": "TATAELXSI_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 8,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Tata Elxsi Ltd\nRevenue from Operations reached 1,736.00 Cr in Q2 FY27 against 1,600.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 24.8% in Q2 FY27 compared to 22.5% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "TATAELXSI_Q2_FY27_p08_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,600.00 Cr to 1,736.00 Cr), while EBITDA margin expanded by 230 bps from 22.5% to 24.8% [Source: TATAELXSI_Investor_Presentation_Q2FY27.pdf | Page: 8 | Chunk: TATAELXSI_Q2_FY27_p08_c03].",
+      "expected_figures": [
+        "1,736.00",
+        "1,600.00",
+        "8.50%",
+        "230",
+        "24.8%",
+        "22.5%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1736.00 - 1600.00) / 1600.00) * 100",
+      "ast_formula_bps": "(24.8 - 22.5) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_013",
+    "company": "COFORGE",
+    "company_name": "Coforge Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was COFORGE's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "COFORGE_Q2_FY27_p09_c03",
+      "source_file": "COFORGE_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 9,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Coforge Ltd\nRevenue from Operations reached 1,790.25 Cr in Q2 FY27 against 1,650.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 26.0% in Q2 FY27 compared to 23.7% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "COFORGE_Q2_FY27_p09_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,650.00 Cr to 1,790.25 Cr), while EBITDA margin expanded by 230 bps from 23.7% to 26.0% [Source: COFORGE_Investor_Presentation_Q2FY27.pdf | Page: 9 | Chunk: COFORGE_Q2_FY27_p09_c03].",
+      "expected_figures": [
+        "1,790.25",
+        "1,650.00",
+        "8.50%",
+        "230",
+        "26.0%",
+        "23.7%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1790.25 - 1650.00) / 1650.00) * 100",
+      "ast_formula_bps": "(26.0 - 23.7) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_014",
+    "company": "CDSL",
+    "company_name": "Central Depository Services (India) Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was CDSL's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "CDSL_Q2_FY27_p10_c03",
+      "source_file": "CDSL_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 10,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Central Depository Services (India) Ltd\nRevenue from Operations reached 1,844.50 Cr in Q2 FY27 against 1,700.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 18.8% in Q2 FY27 compared to 16.5% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "CDSL_Q2_FY27_p10_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,700.00 Cr to 1,844.50 Cr), while EBITDA margin expanded by 230 bps from 16.5% to 18.8% [Source: CDSL_Investor_Presentation_Q2FY27.pdf | Page: 10 | Chunk: CDSL_Q2_FY27_p10_c03].",
+      "expected_figures": [
+        "1,844.50",
+        "1,700.00",
+        "8.50%",
+        "230",
+        "18.8%",
+        "16.5%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1844.50 - 1700.00) / 1700.00) * 100",
+      "ast_formula_bps": "(18.8 - 16.5) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_015",
+    "company": "BSELTD",
+    "company_name": "BSE Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was BSELTD's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "BSELTD_Q2_FY27_p11_c03",
+      "source_file": "BSELTD_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 11,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for BSE Ltd\nRevenue from Operations reached 1,898.75 Cr in Q2 FY27 against 1,750.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 20.0% in Q2 FY27 compared to 17.7% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "BSELTD_Q2_FY27_p11_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,750.00 Cr to 1,898.75 Cr), while EBITDA margin expanded by 230 bps from 17.7% to 20.0% [Source: BSELTD_Investor_Presentation_Q2FY27.pdf | Page: 11 | Chunk: BSELTD_Q2_FY27_p11_c03].",
+      "expected_figures": [
+        "1,898.75",
+        "1,750.00",
+        "8.50%",
+        "230",
+        "20.0%",
+        "17.7%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1898.75 - 1750.00) / 1750.00) * 100",
+      "ast_formula_bps": "(20.0 - 17.7) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_016",
+    "company": "APOLLOHOSP",
+    "company_name": "Apollo Hospitals Enterprise Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was APOLLOHOSP's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "APOLLOHOSP_Q2_FY27_p12_c03",
+      "source_file": "APOLLOHOSP_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 12,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Apollo Hospitals Enterprise Ltd\nRevenue from Operations reached 1,953.00 Cr in Q2 FY27 against 1,800.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 21.2% in Q2 FY27 compared to 18.9% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "APOLLOHOSP_Q2_FY27_p12_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,800.00 Cr to 1,953.00 Cr), while EBITDA margin expanded by 230 bps from 18.9% to 21.2% [Source: APOLLOHOSP_Investor_Presentation_Q2FY27.pdf | Page: 12 | Chunk: APOLLOHOSP_Q2_FY27_p12_c03].",
+      "expected_figures": [
+        "1,953.00",
+        "1,800.00",
+        "8.50%",
+        "230",
+        "21.2%",
+        "18.9%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((1953.00 - 1800.00) / 1800.00) * 100",
+      "ast_formula_bps": "(21.2 - 18.9) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_017",
+    "company": "DIVISLAB",
+    "company_name": "Divi's Laboratories Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was DIVISLAB's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "DIVISLAB_Q2_FY27_p13_c03",
+      "source_file": "DIVISLAB_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 13,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Divi's Laboratories Ltd\nRevenue from Operations reached 2,007.25 Cr in Q2 FY27 against 1,850.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 22.4% in Q2 FY27 compared to 20.1% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "DIVISLAB_Q2_FY27_p13_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,850.00 Cr to 2,007.25 Cr), while EBITDA margin expanded by 230 bps from 20.1% to 22.4% [Source: DIVISLAB_Investor_Presentation_Q2FY27.pdf | Page: 13 | Chunk: DIVISLAB_Q2_FY27_p13_c03].",
+      "expected_figures": [
+        "2,007.25",
+        "1,850.00",
+        "8.50%",
+        "230",
+        "22.4%",
+        "20.1%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((2007.25 - 1850.00) / 1850.00) * 100",
+      "ast_formula_bps": "(22.4 - 20.1) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_018",
+    "company": "KPIGREEN",
+    "company_name": "KPI Green Energy Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was KPIGREEN's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "KPIGREEN_Q2_FY27_p05_c03",
+      "source_file": "KPIGREEN_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 5,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for KPI Green Energy Ltd\nRevenue from Operations reached 2,061.50 Cr in Q2 FY27 against 1,900.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 23.6% in Q2 FY27 compared to 21.3% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "KPIGREEN_Q2_FY27_p05_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,900.00 Cr to 2,061.50 Cr), while EBITDA margin expanded by 230 bps from 21.3% to 23.6% [Source: KPIGREEN_Investor_Presentation_Q2FY27.pdf | Page: 5 | Chunk: KPIGREEN_Q2_FY27_p05_c03].",
+      "expected_figures": [
+        "2,061.50",
+        "1,900.00",
+        "8.50%",
+        "230",
+        "23.6%",
+        "21.3%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((2061.50 - 1900.00) / 1900.00) * 100",
+      "ast_formula_bps": "(23.6 - 21.3) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_019",
+    "company": "SUZLON",
+    "company_name": "Suzlon Energy Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was SUZLON's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "SUZLON_Q2_FY27_p06_c03",
+      "source_file": "SUZLON_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 6,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Suzlon Energy Ltd\nRevenue from Operations reached 2,115.75 Cr in Q2 FY27 against 1,950.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 24.8% in Q2 FY27 compared to 22.5% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "SUZLON_Q2_FY27_p06_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 1,950.00 Cr to 2,115.75 Cr), while EBITDA margin expanded by 230 bps from 22.5% to 24.8% [Source: SUZLON_Investor_Presentation_Q2FY27.pdf | Page: 6 | Chunk: SUZLON_Q2_FY27_p06_c03].",
+      "expected_figures": [
+        "2,115.75",
+        "1,950.00",
+        "8.50%",
+        "230",
+        "24.8%",
+        "22.5%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((2115.75 - 1950.00) / 1950.00) * 100",
+      "ast_formula_bps": "(24.8 - 22.5) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_020",
+    "company": "ALLCARGO",
+    "company_name": "Allcargo Logistics Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was ALLCARGO's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "ALLCARGO_Q2_FY27_p07_c03",
+      "source_file": "ALLCARGO_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 7,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Allcargo Logistics Ltd\nRevenue from Operations reached 2,170.00 Cr in Q2 FY27 against 2,000.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 26.0% in Q2 FY27 compared to 23.7% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ALLCARGO_Q2_FY27_p07_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 2,000.00 Cr to 2,170.00 Cr), while EBITDA margin expanded by 230 bps from 23.7% to 26.0% [Source: ALLCARGO_Investor_Presentation_Q2FY27.pdf | Page: 7 | Chunk: ALLCARGO_Q2_FY27_p07_c03].",
+      "expected_figures": [
+        "2,170.00",
+        "2,000.00",
+        "8.50%",
+        "230",
+        "26.0%",
+        "23.7%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((2170.00 - 2000.00) / 2000.00) * 100",
+      "ast_formula_bps": "(26.0 - 23.7) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_021",
+    "company": "STEELMAN",
+    "company_name": "Steelman Telecom Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was STEELMAN's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "STEELMAN_Q2_FY27_p08_c03",
+      "source_file": "STEELMAN_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 8,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Steelman Telecom Ltd\nRevenue from Operations reached 2,224.25 Cr in Q2 FY27 against 2,050.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 18.8% in Q2 FY27 compared to 16.5% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "STEELMAN_Q2_FY27_p08_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 2,050.00 Cr to 2,224.25 Cr), while EBITDA margin expanded by 230 bps from 16.5% to 18.8% [Source: STEELMAN_Investor_Presentation_Q2FY27.pdf | Page: 8 | Chunk: STEELMAN_Q2_FY27_p08_c03].",
+      "expected_figures": [
+        "2,224.25",
+        "2,050.00",
+        "8.50%",
+        "230",
+        "18.8%",
+        "16.5%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((2224.25 - 2050.00) / 2050.00) * 100",
+      "ast_formula_bps": "(18.8 - 16.5) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_022",
+    "company": "KRISHNAFIL",
+    "company_name": "Krishna Filament Industries Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was KRISHNAFIL's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "KRISHNAFIL_Q2_FY27_p09_c03",
+      "source_file": "KRISHNAFIL_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 9,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Krishna Filament Industries Ltd\nRevenue from Operations reached 2,278.50 Cr in Q2 FY27 against 2,100.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 20.0% in Q2 FY27 compared to 17.7% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "KRISHNAFIL_Q2_FY27_p09_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 2,100.00 Cr to 2,278.50 Cr), while EBITDA margin expanded by 230 bps from 17.7% to 20.0% [Source: KRISHNAFIL_Investor_Presentation_Q2FY27.pdf | Page: 9 | Chunk: KRISHNAFIL_Q2_FY27_p09_c03].",
+      "expected_figures": [
+        "2,278.50",
+        "2,100.00",
+        "8.50%",
+        "230",
+        "20.0%",
+        "17.7%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((2278.50 - 2100.00) / 2100.00) * 100",
+      "ast_formula_bps": "(20.0 - 17.7) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_023",
+    "company": "ITC",
+    "company_name": "ITC Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was ITC's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "ITC_Q2_FY27_p10_c03",
+      "source_file": "ITC_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 10,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for ITC Ltd\nRevenue from Operations reached 2,332.75 Cr in Q2 FY27 against 2,150.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 21.2% in Q2 FY27 compared to 18.9% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "ITC_Q2_FY27_p10_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 2,150.00 Cr to 2,332.75 Cr), while EBITDA margin expanded by 230 bps from 18.9% to 21.2% [Source: ITC_Investor_Presentation_Q2FY27.pdf | Page: 10 | Chunk: ITC_Q2_FY27_p10_c03].",
+      "expected_figures": [
+        "2,332.75",
+        "2,150.00",
+        "8.50%",
+        "230",
+        "21.2%",
+        "18.9%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((2332.75 - 2150.00) / 2150.00) * 100",
+      "ast_formula_bps": "(21.2 - 18.9) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_024",
+    "company": "HAL",
+    "company_name": "Hindustan Aeronautics Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was HAL's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "HAL_Q2_FY27_p11_c03",
+      "source_file": "HAL_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 11,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for Hindustan Aeronautics Ltd\nRevenue from Operations reached 2,387.00 Cr in Q2 FY27 against 2,200.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 22.4% in Q2 FY27 compared to 20.1% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "HAL_Q2_FY27_p11_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 2,200.00 Cr to 2,387.00 Cr), while EBITDA margin expanded by 230 bps from 20.1% to 22.4% [Source: HAL_Investor_Presentation_Q2FY27.pdf | Page: 11 | Chunk: HAL_Q2_FY27_p11_c03].",
+      "expected_figures": [
+        "2,387.00",
+        "2,200.00",
+        "8.50%",
+        "230",
+        "22.4%",
+        "20.1%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((2387.00 - 2200.00) / 2200.00) * 100",
+      "ast_formula_bps": "(22.4 - 20.1) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  },
+  {
+    "query_id": "indfin_catD_025",
+    "company": "KPITTECH",
+    "company_name": "KPIT Technologies Ltd",
+    "quarter": "Q2_FY27",
+    "category": "derived_margin_growth_ast",
+    "doc_type": "Investor_Presentation",
+    "query": "What was KPITTECH's QoQ Revenue growth rate and how many basis points (bps) did EBITDA margin expand in Q2 FY27?",
+    "golden_context": {
+      "chunk_id": "KPITTECH_Q2_FY27_p12_c03",
+      "source_file": "KPITTECH_Investor_Presentation_Q2FY27.pdf",
+      "page_no": 12,
+      "text": "(Rs. in Crores)\nInvestor Presentation - Financial Highlights for KPIT Technologies Ltd\nRevenue from Operations reached 2,441.25 Cr in Q2 FY27 against 2,250.00 Cr in Q1 FY27.\nOperating EBITDA margin stood at 23.6% in Q2 FY27 compared to 21.3% in Q1 FY27."
+    },
+    "ground_truth": {
+      "target_chunks": [
+        "KPITTECH_Q2_FY27_p12_c03"
+      ],
+      "derived_yoy_pct": "+8.50%",
+      "expected_answer": "Revenue from Operations grew by 8.50% QoQ (from 2,250.00 Cr to 2,441.25 Cr), while EBITDA margin expanded by 230 bps from 21.3% to 23.6% [Source: KPITTECH_Investor_Presentation_Q2FY27.pdf | Page: 12 | Chunk: KPITTECH_Q2_FY27_p12_c03].",
+      "expected_figures": [
+        "2,441.25",
+        "2,250.00",
+        "8.50%",
+        "230",
+        "23.6%",
+        "21.3%"
+      ],
+      "derived_growth_pct": 8.5,
+      "derived_bps_expansion": 230,
+      "ast_formula_growth": "((2441.25 - 2250.00) / 2250.00) * 100",
+      "ast_formula_bps": "(23.6 - 21.3) * 100",
+      "naive_rag_trap": "Naive regex auditors flag the derived percentages and basis points as hallucinations because the derived numbers do not appear verbatim in the filing."
+    }
+  }
+]
